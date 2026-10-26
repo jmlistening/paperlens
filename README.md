@@ -9,9 +9,9 @@
 <p>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&amp;logoColor=white" alt="Python 3.11"></a>
 <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-1.66-FF4B4B?logo=streamlit&amp;logoColor=white" alt="Streamlit"></a>
-<a href="#测试"><img src="https://img.shields.io/badge/tests-769%20offline-brightgreen" alt="769 offline tests"></a>
+<a href="#tests"><img src="https://img.shields.io/badge/tests-769%20offline-brightgreen" alt="769 offline tests"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
-<a href="#隐私与安全"><img src="https://img.shields.io/badge/local--first-no%20telemetry-0F766E" alt="Local-first"></a>
+<a href="#privacy"><img src="https://img.shields.io/badge/local--first-no%20telemetry-0F766E" alt="Local-first"></a>
 </p>
 
 <p><a href="#quickstart">快速开始</a> · <a href="#features">功能</a> · <a href="#screenshots">截图</a> · <a href="#rag">RAG</a> · <a href="#agent">Agent</a> · <a href="#architecture">架构</a> · <a href="#evaluation">评测</a> · <a href="#privacy">隐私</a> · <a href="#english">English</a></p>
