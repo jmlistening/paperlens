@@ -1,0 +1,994 @@
+{
+  "schema_version": 1,
+  "model": "deepseek-flash",
+  "created_at": "2026-10-25T03:15:35.205400+00:00",
+  "calls": 89,
+  "question_count": 35,
+  "totals": {
+    "prompt_tokens": 188360,
+    "completion_tokens": 17598,
+    "total_tokens": 205958,
+    "questions_with_usage": 89
+  },
+  "questions": [
+    {
+      "question_id": "q001",
+      "paper_id": "2607.05956v1",
+      "attempt": 1,
+      "prompt_sha256": "a2cbe1fc465708200c138a7f1921c87b16da0f8614f791038b2e91c7a406790a",
+      "usage": {
+        "prompt_tokens": 2917,
+        "completion_tokens": 242,
+        "total_tokens": 3159
+      }
+    },
+    {
+      "question_id": "q001",
+      "paper_id": "2607.05956v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 128,
+        "completion_tokens": 23,
+        "total_tokens": 151
+      }
+    },
+    {
+      "question_id": "q002",
+      "paper_id": "2607.11074v1",
+      "attempt": 1,
+      "prompt_sha256": "6ff05100212dc0ca00210ef6f9ce462249509f36725cceb819e1c72053fe52f6",
+      "usage": {
+        "prompt_tokens": 3319,
+        "completion_tokens": 460,
+        "total_tokens": 3779
+      }
+    },
+    {
+      "question_id": "q002",
+      "paper_id": "2607.11074v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 165,
+        "completion_tokens": 34,
+        "total_tokens": 199
+      }
+    },
+    {
+      "question_id": "q003",
+      "paper_id": "2607.16604v2",
+      "attempt": 1,
+      "prompt_sha256": "410fc36b8d1668ec7587686a9f80c918d309aee45a2fa840d0aa2bcfb61221c7",
+      "usage": {
+        "prompt_tokens": 3212,
+        "completion_tokens": 366,
+        "total_tokens": 3578
+      }
+    },
+    {
+      "question_id": "q003",
+      "paper_id": "2607.16604v2",
+      "attempt": 2,
+      "prompt_sha256": "8144a67e31964e10ca5df79ac56048b6933898fd75724afa6d808a666e6ed102",
+      "usage": {
+        "prompt_tokens": 3887,
+        "completion_tokens": 274,
+        "total_tokens": 4161
+      }
+    },
+    {
+      "question_id": "q003",
+      "paper_id": "2607.16604v2",
+      "attempt": 3,
+      "prompt_sha256": "911631c9d305790f00792433c58ec54114d930fcc452cf1ea1f4597864e46d10",
+      "usage": {
+        "prompt_tokens": 3763,
+        "completion_tokens": 330,
+        "total_tokens": 4093
+      }
+    },
+    {
+      "question_id": "q004",
+      "paper_id": "2608.01468v1",
+      "attempt": 1,
+      "prompt_sha256": "486e458943354fd50e7a47ca2427656ba37dffdc6877fc320e4f6e065d1068f3",
+      "usage": {
+        "prompt_tokens": 2727,
+        "completion_tokens": 255,
+        "total_tokens": 2982
+      }
+    },
+    {
+      "question_id": "q004",
+      "paper_id": "2608.01468v1",
+      "attempt": 2,
+      "prompt_sha256": "b5b18e5e2f357779fad9f4cb7dc47b66638ac3d870494501d3abc954efab70e7",
+      "usage": {
+        "prompt_tokens": 3314,
+        "completion_tokens": 280,
+        "total_tokens": 3594
+      }
+    },
+    {
+      "question_id": "q004",
+      "paper_id": "2608.01468v1",
+      "attempt": 3,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 31,
+        "total_tokens": 146
+      }
+    },
+    {
+      "question_id": "q005",
+      "paper_id": "2608.01565v1",
+      "attempt": 1,
+      "prompt_sha256": "7348fb73f0d50cdf1308b0ab0fa97beb2c3856e405d2dbbfe6ae7197d0fd9c1d",
+      "usage": {
+        "prompt_tokens": 3348,
+        "completion_tokens": 471,
+        "total_tokens": 3819
+      }
+    },
+    {
+      "question_id": "q005",
+      "paper_id": "2608.01565v1",
+      "attempt": 2,
+      "prompt_sha256": "6230ad0a310fd9687ce23a758b4240857a0b0411b8715b2438b3d78317521024",
+      "usage": {
+        "prompt_tokens": 4120,
+        "completion_tokens": 360,
+        "total_tokens": 4480
+      }
+    },
+    {
+      "question_id": "q005",
+      "paper_id": "2608.01565v1",
+      "attempt": 3,
+      "prompt_sha256": "00bbcc49f8ebd9bb66f9e2a590c932c6db6da5d78a2352d0deff8c3440ea7c96",
+      "usage": {
+        "prompt_tokens": 4037,
+        "completion_tokens": 369,
+        "total_tokens": 4406
+      }
+    },
+    {
+      "question_id": "q005",
+      "paper_id": "2608.01565v1",
+      "attempt": 4,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 120,
+        "completion_tokens": 35,
+        "total_tokens": 155
+      }
+    },
+    {
+      "question_id": "q006",
+      "paper_id": "2608.03860v1",
+      "attempt": 1,
+      "prompt_sha256": "870579fdab6cfcca93d3f938cf286042aa913f0ba73b3a0b7ee7ddbb9290e947",
+      "usage": {
+        "prompt_tokens": 3812,
+        "completion_tokens": 348,
+        "total_tokens": 4160
+      }
+    },
+    {
+      "question_id": "q006",
+      "paper_id": "2608.03860v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 41,
+        "total_tokens": 170
+      }
+    },
+    {
+      "question_id": "q007",
+      "paper_id": "2608.07370v2",
+      "attempt": 1,
+      "prompt_sha256": "934f9373beabd9e9f12e974d38ab4c25b5175dde378263cc425cd67918dd2182",
+      "usage": {
+        "prompt_tokens": 3517,
+        "completion_tokens": 262,
+        "total_tokens": 3779
+      }
+    },
+    {
+      "question_id": "q007",
+      "paper_id": "2608.07370v2",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 28,
+        "total_tokens": 153
+      }
+    },
+    {
+      "question_id": "q008",
+      "paper_id": "2608.26762v2",
+      "attempt": 1,
+      "prompt_sha256": "be9c35a3b36ba69c28443cae5a25ff64854978ca840da57b98c0ea4ee4ab7f70",
+      "usage": {
+        "prompt_tokens": 3501,
+        "completion_tokens": 213,
+        "total_tokens": 3714
+      }
+    },
+    {
+      "question_id": "q008",
+      "paper_id": "2608.26762v2",
+      "attempt": 2,
+      "prompt_sha256": "f883e1a5bb977b4b62ae01ac44ea7beaac982de32f20cf45043f11c58cb1deea",
+      "usage": {
+        "prompt_tokens": 4049,
+        "completion_tokens": 184,
+        "total_tokens": 4233
+      }
+    },
+    {
+      "question_id": "q008",
+      "paper_id": "2608.26762v2",
+      "attempt": 3,
+      "prompt_sha256": "19ca21c15a8527b8cb8ac5ba378f5f3ce71bd560c11cfa9aa37618bcf9778f31",
+      "usage": {
+        "prompt_tokens": 4011,
+        "completion_tokens": 208,
+        "total_tokens": 4219
+      }
+    },
+    {
+      "question_id": "q009",
+      "paper_id": "2608.30214v1",
+      "attempt": 1,
+      "prompt_sha256": "28856465fc13e0102ad906272407191541f7c81993652cb67fdfde2c03a1f125",
+      "usage": {
+        "prompt_tokens": 3212,
+        "completion_tokens": 415,
+        "total_tokens": 3627
+      }
+    },
+    {
+      "question_id": "q009",
+      "paper_id": "2608.30214v1",
+      "attempt": 2,
+      "prompt_sha256": "88f6892104c21f4bd08c7367ed858720bf77dbf671f5da7c16e9e83938c8e1e3",
+      "usage": {
+        "prompt_tokens": 3952,
+        "completion_tokens": 449,
+        "total_tokens": 4401
+      }
+    },
+    {
+      "question_id": "q009",
+      "paper_id": "2608.30214v1",
+      "attempt": 3,
+      "prompt_sha256": "912f8c394e63ed529b87db06119bb4289bdac7c4b4819cf6bcb53adc12664ed3",
+      "usage": {
+        "prompt_tokens": 3959,
+        "completion_tokens": 402,
+        "total_tokens": 4361
+      }
+    },
+    {
+      "question_id": "q009",
+      "paper_id": "2608.30214v1",
+      "attempt": 4,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 26,
+        "total_tokens": 136
+      }
+    },
+    {
+      "question_id": "q010",
+      "paper_id": "2609.00761v1",
+      "attempt": 1,
+      "prompt_sha256": "fdb2c59a9cd2c4b4fe49c1edbc72c36971884d96b1e8d05546b9a817c30d76e1",
+      "usage": {
+        "prompt_tokens": 3608,
+        "completion_tokens": 195,
+        "total_tokens": 3803
+      }
+    },
+    {
+      "question_id": "q010",
+      "paper_id": "2609.00761v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 24,
+        "total_tokens": 139
+      }
+    },
+    {
+      "question_id": "q011",
+      "paper_id": "2609.04999v1",
+      "attempt": 1,
+      "prompt_sha256": "876c221d43eb128792ac0a8a351b4bde2712fe7fe5f58b250048a576f7fd5eb0",
+      "usage": {
+        "prompt_tokens": 3108,
+        "completion_tokens": 283,
+        "total_tokens": 3391
+      }
+    },
+    {
+      "question_id": "q011",
+      "paper_id": "2609.04999v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 134,
+        "completion_tokens": 25,
+        "total_tokens": 159
+      }
+    },
+    {
+      "question_id": "q012",
+      "paper_id": "2609.06222v1",
+      "attempt": 1,
+      "prompt_sha256": "760f8209bcfdf20979e452d9ed831f5fc81b712a7d25219c5079b361b2347e67",
+      "usage": {
+        "prompt_tokens": 3016,
+        "completion_tokens": 182,
+        "total_tokens": 3198
+      }
+    },
+    {
+      "question_id": "q012",
+      "paper_id": "2609.06222v1",
+      "attempt": 2,
+      "prompt_sha256": "dbb34459c61f525a61067416b907f4480812d3a65c88b47ee0af69caf7256865",
+      "usage": {
+        "prompt_tokens": 3523,
+        "completion_tokens": 366,
+        "total_tokens": 3889
+      }
+    },
+    {
+      "question_id": "q012",
+      "paper_id": "2609.06222v1",
+      "attempt": 3,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 30,
+        "total_tokens": 145
+      }
+    },
+    {
+      "question_id": "q013",
+      "paper_id": "2609.13648v1",
+      "attempt": 1,
+      "prompt_sha256": "d4710a4587382b27eddea5357115bc6ccbc597f7507fd12dc9f1467de400730b",
+      "usage": {
+        "prompt_tokens": 3175,
+        "completion_tokens": 248,
+        "total_tokens": 3423
+      }
+    },
+    {
+      "question_id": "q013",
+      "paper_id": "2609.13648v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 122,
+        "completion_tokens": 25,
+        "total_tokens": 147
+      }
+    },
+    {
+      "question_id": "q014",
+      "paper_id": "2609.18769v1",
+      "attempt": 1,
+      "prompt_sha256": "22eb8ef8027f5730d1d687d074cbbde4a3958ba6bf3427470cc878d25fb53550",
+      "usage": {
+        "prompt_tokens": 2883,
+        "completion_tokens": 215,
+        "total_tokens": 3098
+      }
+    },
+    {
+      "question_id": "q014",
+      "paper_id": "2609.18769v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 34,
+        "total_tokens": 150
+      }
+    },
+    {
+      "question_id": "q015",
+      "paper_id": "2609.20574v2",
+      "attempt": 1,
+      "prompt_sha256": "a4f842b7243d6d387593f6a18424d99b4faa160e979231c3a752de63992ac99a",
+      "usage": {
+        "prompt_tokens": 3083,
+        "completion_tokens": 173,
+        "total_tokens": 3256
+      }
+    },
+    {
+      "question_id": "q015",
+      "paper_id": "2609.20574v2",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 18,
+        "total_tokens": 139
+      }
+    },
+    {
+      "question_id": "q016",
+      "paper_id": "2609.27784v1",
+      "attempt": 1,
+      "prompt_sha256": "6a3b07068fd735457d33a77ec9a3d32e9060e8bba00f34ff8e01d8960e6c0244",
+      "usage": {
+        "prompt_tokens": 3148,
+        "completion_tokens": 340,
+        "total_tokens": 3488
+      }
+    },
+    {
+      "question_id": "q016",
+      "paper_id": "2609.27784v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 25,
+        "total_tokens": 149
+      }
+    },
+    {
+      "question_id": "q017",
+      "paper_id": "2609.29083v1",
+      "attempt": 1,
+      "prompt_sha256": "53ff3a52e0b0ba468e9a4fe33b4b69dac1a7efcfe4425884309f1a48ace2486c",
+      "usage": {
+        "prompt_tokens": 3202,
+        "completion_tokens": 206,
+        "total_tokens": 3408
+      }
+    },
+    {
+      "question_id": "q017",
+      "paper_id": "2609.29083v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 21,
+        "total_tokens": 127
+      }
+    },
+    {
+      "question_id": "q018",
+      "paper_id": "2609.33503v1",
+      "attempt": 1,
+      "prompt_sha256": "2476f5f5ed441ac7217c8b1d150d441a9dc15f6a4deeb92b9ca4ad71c0367fda",
+      "usage": {
+        "prompt_tokens": 3780,
+        "completion_tokens": 545,
+        "total_tokens": 4325
+      }
+    },
+    {
+      "question_id": "q018",
+      "paper_id": "2609.33503v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 35,
+        "total_tokens": 156
+      }
+    },
+    {
+      "question_id": "q019",
+      "paper_id": "2609.36392v1",
+      "attempt": 1,
+      "prompt_sha256": "a893905d53daff1aa5fe1220bc6ee14ff7c38e701beaeb44f461ad766eec8143",
+      "usage": {
+        "prompt_tokens": 3822,
+        "completion_tokens": 323,
+        "total_tokens": 4145
+      }
+    },
+    {
+      "question_id": "q019",
+      "paper_id": "2609.36392v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 23,
+        "total_tokens": 133
+      }
+    },
+    {
+      "question_id": "q020",
+      "paper_id": "2609.38473v1",
+      "attempt": 1,
+      "prompt_sha256": "c3d10e0965de242b9061be5be09f6e22d3bcd8920b26a94ba9e7488488f96d19",
+      "usage": {
+        "prompt_tokens": 3057,
+        "completion_tokens": 251,
+        "total_tokens": 3308
+      }
+    },
+    {
+      "question_id": "q020",
+      "paper_id": "2609.38473v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 126,
+        "completion_tokens": 34,
+        "total_tokens": 160
+      }
+    },
+    {
+      "question_id": "q021",
+      "paper_id": "2610.12312v1",
+      "attempt": 1,
+      "prompt_sha256": "f170b99ade1da5116fd5f0a75591f7aa2ac27fbc246b0ec9abed325fee80bb1f",
+      "usage": {
+        "prompt_tokens": 3994,
+        "completion_tokens": 247,
+        "total_tokens": 4241
+      }
+    },
+    {
+      "question_id": "q021",
+      "paper_id": "2610.12312v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 30,
+        "total_tokens": 141
+      }
+    },
+    {
+      "question_id": "q022",
+      "paper_id": "2610.19207v1",
+      "attempt": 1,
+      "prompt_sha256": "e03cb5c9f40d02a5a1ddb4ba653a3a869a4bf5880817fbfaf341e547dd9fd728",
+      "usage": {
+        "prompt_tokens": 4048,
+        "completion_tokens": 454,
+        "total_tokens": 4502
+      }
+    },
+    {
+      "question_id": "q022",
+      "paper_id": "2610.19207v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 15,
+        "total_tokens": 140
+      }
+    },
+    {
+      "question_id": "q023",
+      "paper_id": "2610.23299v1",
+      "attempt": 1,
+      "prompt_sha256": "f3739a5b66f8257438ad93ebb2093365045d3b6da9ba5bb561dc51c444de8e1d",
+      "usage": {
+        "prompt_tokens": 3159,
+        "completion_tokens": 383,
+        "total_tokens": 3542
+      }
+    },
+    {
+      "question_id": "q023",
+      "paper_id": "2610.23299v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 122,
+        "completion_tokens": 35,
+        "total_tokens": 157
+      }
+    },
+    {
+      "question_id": "q024",
+      "paper_id": "2610.26339v1",
+      "attempt": 1,
+      "prompt_sha256": "d412bece81fc0dfb5005772ff3984871408d6cea048d2d5bda916b102ee3f989",
+      "usage": {
+        "prompt_tokens": 3472,
+        "completion_tokens": 193,
+        "total_tokens": 3665
+      }
+    },
+    {
+      "question_id": "q024",
+      "paper_id": "2610.26339v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 19,
+        "total_tokens": 143
+      }
+    },
+    {
+      "question_id": "q025",
+      "paper_id": "2112.13946v1",
+      "attempt": 1,
+      "prompt_sha256": "be503b3d92ee56c69a1152f6f7101280a1a87fa6c03aa99ce1c1d781354528e5",
+      "usage": {
+        "prompt_tokens": 3266,
+        "completion_tokens": 285,
+        "total_tokens": 3551
+      }
+    },
+    {
+      "question_id": "q025",
+      "paper_id": "2112.13946v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 27,
+        "total_tokens": 148
+      }
+    },
+    {
+      "question_id": "q026",
+      "paper_id": "2212.09656v1",
+      "attempt": 1,
+      "prompt_sha256": "525850ce1fd89a20156ddc0f21ddadb5f343d2a6bd650413bd8843f4523ed0b7",
+      "usage": {
+        "prompt_tokens": 3594,
+        "completion_tokens": 178,
+        "total_tokens": 3772
+      }
+    },
+    {
+      "question_id": "q026",
+      "paper_id": "2212.09656v1",
+      "attempt": 2,
+      "prompt_sha256": "a68969b96816d66c1d43dec4c82282784746089921e32da06fe46323c0d1209a",
+      "usage": {
+        "prompt_tokens": 4079,
+        "completion_tokens": 218,
+        "total_tokens": 4297
+      }
+    },
+    {
+      "question_id": "q026",
+      "paper_id": "2212.09656v1",
+      "attempt": 3,
+      "prompt_sha256": "54a60a2376bc2652bfc08e25273add3f50a32d994fb4d4bde717e5c28a18c362",
+      "usage": {
+        "prompt_tokens": 4134,
+        "completion_tokens": 363,
+        "total_tokens": 4497
+      }
+    },
+    {
+      "question_id": "q027",
+      "paper_id": "2310.16146v1",
+      "attempt": 1,
+      "prompt_sha256": "169e6b40105e79546574c2ef72ac895318415f2ad232ee457ec03e3947ad987e",
+      "usage": {
+        "prompt_tokens": 2955,
+        "completion_tokens": 251,
+        "total_tokens": 3206
+      }
+    },
+    {
+      "question_id": "q027",
+      "paper_id": "2310.16146v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 26,
+        "total_tokens": 136
+      }
+    },
+    {
+      "question_id": "q028",
+      "paper_id": "2311.13565v1",
+      "attempt": 1,
+      "prompt_sha256": "44cab70eeb1b82e5c575afdd9c0af254ba1847765c99c19ce47ac0f02fccbf98",
+      "usage": {
+        "prompt_tokens": 3316,
+        "completion_tokens": 408,
+        "total_tokens": 3724
+      }
+    },
+    {
+      "question_id": "q028",
+      "paper_id": "2311.13565v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 112,
+        "completion_tokens": 30,
+        "total_tokens": 142
+      }
+    },
+    {
+      "question_id": "q029",
+      "paper_id": "2312.07559v2",
+      "attempt": 1,
+      "prompt_sha256": "401c0f64b0dc12e976f833c6ffe63d14f0f1bfdcff575c895e6d55d062a6e3d0",
+      "usage": {
+        "prompt_tokens": 3088,
+        "completion_tokens": 196,
+        "total_tokens": 3284
+      }
+    },
+    {
+      "question_id": "q029",
+      "paper_id": "2312.07559v2",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 24,
+        "total_tokens": 147
+      }
+    },
+    {
+      "question_id": "q030",
+      "paper_id": "2401.00426v1",
+      "attempt": 1,
+      "prompt_sha256": "9a99ad9362a29276ace305cd121c31b84325861ee678526b1afa72c84a2d9278",
+      "usage": {
+        "prompt_tokens": 3517,
+        "completion_tokens": 401,
+        "total_tokens": 3918
+      }
+    },
+    {
+      "question_id": "q030",
+      "paper_id": "2401.00426v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 31,
+        "total_tokens": 145
+      }
+    },
+    {
+      "question_id": "q031",
+      "paper_id": "2412.10704v2",
+      "attempt": 1,
+      "prompt_sha256": "c02877ba4f537e5e3b1c8ba061b96e5de4c65a8229d1dad0026a9fccac7232a5",
+      "usage": {
+        "prompt_tokens": 3465,
+        "completion_tokens": 239,
+        "total_tokens": 3704
+      }
+    },
+    {
+      "question_id": "q031",
+      "paper_id": "2412.10704v2",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 112,
+        "completion_tokens": 21,
+        "total_tokens": 133
+      }
+    },
+    {
+      "question_id": "q032",
+      "paper_id": "2412.12322v1",
+      "attempt": 1,
+      "prompt_sha256": "52c7547d1fc97718c84ab830dcc51e3745d834fdb31ac3a3bfc425ae602c8438",
+      "usage": {
+        "prompt_tokens": 2916,
+        "completion_tokens": 479,
+        "total_tokens": 3395
+      }
+    },
+    {
+      "question_id": "q032",
+      "paper_id": "2412.12322v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 52,
+        "total_tokens": 193
+      }
+    },
+    {
+      "question_id": "q033",
+      "paper_id": "2412.12358v1",
+      "attempt": 1,
+      "prompt_sha256": "49f24bc0c399f717e4be2461bd4354e3c39fc877f754d8c3fe4868ffe9eb3d07",
+      "usage": {
+        "prompt_tokens": 2814,
+        "completion_tokens": 250,
+        "total_tokens": 3064
+      }
+    },
+    {
+      "question_id": "q033",
+      "paper_id": "2412.12358v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 26,
+        "total_tokens": 139
+      }
+    },
+    {
+      "question_id": "q034",
+      "paper_id": "2412.15404v1",
+      "attempt": 1,
+      "prompt_sha256": "bb27065d26bde240ca8baf76df262326678c79dee95aadbc41d528419d1a162f",
+      "usage": {
+        "prompt_tokens": 2632,
+        "completion_tokens": 414,
+        "total_tokens": 3046
+      }
+    },
+    {
+      "question_id": "q034",
+      "paper_id": "2412.15404v1",
+      "attempt": 2,
+      "prompt_sha256": "8a91956c822e0a26230ed785db8a5bdfcc34a8fc9d5332e2ba9537e7b048e81b",
+      "usage": {
+        "prompt_tokens": 3339,
+        "completion_tokens": 363,
+        "total_tokens": 3702
+      }
+    },
+    {
+      "question_id": "q034",
+      "paper_id": "2412.15404v1",
+      "attempt": 3,
+      "prompt_sha256": "ea8d090d185ad6ac83e182e6facad05b3e2c7615fddba8bf0314308ef9806181",
+      "usage": {
+        "prompt_tokens": 3336,
+        "completion_tokens": 548,
+        "total_tokens": 3884
+      }
+    },
+    {
+      "question_id": "q035",
+      "paper_id": "2511.16283v1",
+      "attempt": 1,
+      "prompt_sha256": "23bfc8d7e9ee80aa223693202bb48ca51fae4a8bbc4f1ef63307f07fda5cf9d0",
+      "usage": {
+        "prompt_tokens": 3187,
+        "completion_tokens": 324,
+        "total_tokens": 3511
+      }
+    },
+    {
+      "question_id": "q035",
+      "paper_id": "2511.16283v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 37,
+        "total_tokens": 154
+      }
+    },
+    {
+      "question_id": "q036",
+      "paper_id": "2512.00991v1",
+      "attempt": 1,
+      "prompt_sha256": "ffc3fb4da1340e14744ec3d9edee2f0065b4bf7e0f7a92c2e362c96653a4463b",
+      "usage": {
+        "prompt_tokens": 3286,
+        "completion_tokens": 252,
+        "total_tokens": 3538
+      }
+    },
+    {
+      "question_id": "q036",
+      "paper_id": "2512.00991v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 41,
+        "total_tokens": 170
+      }
+    },
+    {
+      "question_id": "q037",
+      "paper_id": "2512.10435v1",
+      "attempt": 1,
+      "prompt_sha256": "8887b47dce3f6fb66a50df316b26b34bc30b924301fddaba5db23b4e2be3c367",
+      "usage": {
+        "prompt_tokens": 2846,
+        "completion_tokens": 257,
+        "total_tokens": 3103
+      }
+    },
+    {
+      "question_id": "q037",
+      "paper_id": "2512.10435v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 127,
+        "completion_tokens": 41,
+        "total_tokens": 168
+      }
+    },
+    {
+      "question_id": "q038",
+      "paper_id": "2512.14738v2",
+      "attempt": 1,
+      "prompt_sha256": "3744e15f28f8b20d62304c223c15954c217e873f207a11d50fa831a676e639ba",
+      "usage": {
+        "prompt_tokens": 3110,
+        "completion_tokens": 309,
+        "total_tokens": 3419
+      }
+    },
+    {
+      "question_id": "q038",
+      "paper_id": "2512.14738v2",
+      "attempt": 2,
+      "prompt_sha256": "d732bbd2c8b3a02fba0f37c8f5be43981fe7a28c9bbee22c2731bce2bd7dd390",
+      "usage": {
+        "prompt_tokens": 3725,
+        "completion_tokens": 185,
+        "total_tokens": 3910
+      }
+    },
+    {
+      "question_id": "q038",
+      "paper_id": "2512.14738v2",
+      "attempt": 3,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 21,
+        "total_tokens": 140
+      }
+    },
+    {
+      "question_id": "q040",
+      "paper_id": "2601.09727v1",
+      "attempt": 1,
+      "prompt_sha256": "988479f4c9267e3de37754202f62e9d1f0c750d5cdb4d141a6579a05bcb1d38f",
+      "usage": {
+        "prompt_tokens": 2779,
+        "completion_tokens": 173,
+        "total_tokens": 2952
+      }
+    },
+    {
+      "question_id": "q040",
+      "paper_id": "2601.09727v1",
+      "attempt": 2,
+      "prompt_sha256": null,
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 25,
+        "total_tokens": 144
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# PaperLens runtime dependencies (Windows, Python 3.11)
+# Generated from the local `paperlens` conda environment on 2026-10-25.
+# The local environment uses torch 2.13.0+cu126; on CPU-only machines install
+# the matching CPU wheel from https://pytorch.org/ before `pip install -r requirements.txt`.
+
+arxiv==4.0.1
+faiss-cpu==1.13.2
+httpx==0.28.1
+Jinja2==3.1.6
+numpy==2.4.6
+openai==3.31.0
+pandas==3.0.6
+pydantic==2.14.1
+PyMuPDF==1.28.2
+python-dotenv==1.2.4
+PyYAML==6.0.3
+rank-bm25==0.2.2
+requests==2.34.2
+scikit-learn==1.9.1
+sentence-transformers==6.1.0
+streamlit==1.66.0
+torch==2.13.0
+tqdm==4.70.1
+transformers==5.20.0

@@ -1,0 +1,921 @@
+{
+  "version": "answer_eval_v1",
+  "generated_by": "eval/answer_eval.py",
+  "created_at": "2026-10-25T05:09:47+00:00",
+  "retrieval_run": "eval\\benchmark_v2\\runs\\eval120_rerank\\hybrid_rrf_rerank_top6",
+  "retrieval_run_root": "eval\\benchmark_v2\\runs\\eval120_rerank",
+  "retrieval_system": "hybrid_rrf_rerank_top6",
+  "benchmark_dir": "eval\\benchmark_v2\\eval120",
+  "corpus_path": "eval\\benchmark_v2\\eval120\\index\\corpus_clean.json",
+  "answer_model": "deepseek-flash",
+  "confidence": 0.95,
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed_policy": "sha256('answer_eval\\x1f<metric>')[:8]; deterministic",
+  "disclaimer": "Citation-level evaluation only: this measures JSON schema validity, exact quote copying, and whether the answer cited the gold parent chunks and gold-point quotes. It is NOT answer accuracy, correctness, completeness, or faithfulness. There is no LLM judge and no human review.",
+  "n": 60,
+  "n_failed": 4,
+  "failures": [
+    "q005",
+    "q007",
+    "q009",
+    "q108"
+  ],
+  "status_counts": {
+    "answered": 47,
+    "partial": 9,
+    "insufficient": 0,
+    "invalid": 4
+  },
+  "metrics": {
+    "schema_success": {
+      "mean": 0.9333333333333333,
+      "ci_low": 0.8666666666666667,
+      "ci_high": 0.9833333333333333,
+      "n": 60,
+      "resamples": 2000,
+      "label": "Schema success"
+    },
+    "quote_integrity": {
+      "mean": 0.9333333333333333,
+      "ci_low": 0.8666666666666667,
+      "ci_high": 0.9833333333333333,
+      "n": 60,
+      "resamples": 2000,
+      "label": "Quote integrity"
+    },
+    "cited_gold_parent_recall": {
+      "mean": 0.8222222222222223,
+      "ci_low": 0.7222222222222222,
+      "ci_high": 0.9166666666666666,
+      "n": 60,
+      "resamples": 2000,
+      "label": "Cited gold parent recall"
+    },
+    "gold_point_citation_recall": {
+      "mean": 0.773611111111111,
+      "ci_low": 0.6763888888888889,
+      "ci_high": 0.8638888888888888,
+      "n": 60,
+      "resamples": 2000,
+      "label": "Gold point citation recall"
+    }
+  },
+  "tokens": {
+    "n": 60,
+    "total": 169306,
+    "mean": 2821.766666666667
+  },
+  "latency_ms": {
+    "n": 60,
+    "mean": 2414.238766666666,
+    "p50": 1914.942,
+    "p95": 5375.595499999999
+  },
+  "per_question": [
+    {
+      "question_id": "q001",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2304,
+      "latency_ms": 1372.292,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    },
+    {
+      "question_id": "q002",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 3163,
+      "latency_ms": 2903.154,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q004",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2774,
+      "latency_ms": 1745.635,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q005",
+      "status": "failed",
+      "answer_status": "invalid",
+      "error": "retrieval run unavailable for q005: ValueError: 重排序结果数量不完整。",
+      "tokens": 0,
+      "latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 0.0,
+        "quote_integrity": 0.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q007",
+      "status": "failed",
+      "answer_status": "invalid",
+      "error": "retrieval run unavailable for q007: ValueError: 重排序结果数量不完整。",
+      "tokens": 0,
+      "latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 0.0,
+        "quote_integrity": 0.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q009",
+      "status": "failed",
+      "answer_status": "invalid",
+      "error": "APIConnectionError: Connection error.",
+      "tokens": 2774,
+      "latency_ms": 18989.633,
+      "metrics": {
+        "schema_success": 0.0,
+        "quote_integrity": 0.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q010",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2713,
+      "latency_ms": 1574.096,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    },
+    {
+      "question_id": "q011",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2955,
+      "latency_ms": 1877.906,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q012",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2307,
+      "latency_ms": 1494.184,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q013",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2883,
+      "latency_ms": 1834.188,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q014",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2682,
+      "latency_ms": 1998.587,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q015",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2848,
+      "latency_ms": 1313.772,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q016",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2686,
+      "latency_ms": 2134.747,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q017",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2812,
+      "latency_ms": 1946.509,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q018",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 7208,
+      "latency_ms": 5454.075,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.5,
+        "gold_point_citation_recall": 0.75
+      }
+    },
+    {
+      "question_id": "q019",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2455,
+      "latency_ms": 1908.04,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q020",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 3041,
+      "latency_ms": 1921.844,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q021",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2722,
+      "latency_ms": 2132.854,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q023",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2404,
+      "latency_ms": 2014.547,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q025",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 1980,
+      "latency_ms": 1662.385,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q027",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2425,
+      "latency_ms": 1342.749,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q028",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2695,
+      "latency_ms": 2349.503,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q029",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2755,
+      "latency_ms": 2038.54,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q030",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2390,
+      "latency_ms": 1424.045,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.5,
+        "gold_point_citation_recall": 0.75
+      }
+    },
+    {
+      "question_id": "q032",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2589,
+      "latency_ms": 2966.867,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q033",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2738,
+      "latency_ms": 2465.43,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q035",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2084,
+      "latency_ms": 1779.888,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.3333333333333333
+      }
+    },
+    {
+      "question_id": "q036",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2192,
+      "latency_ms": 1211.098,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q037",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2455,
+      "latency_ms": 1215.392,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q038",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2684,
+      "latency_ms": 943.441,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q040",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2346,
+      "latency_ms": 1221.067,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q101",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 6640,
+      "latency_ms": 6162.182,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "q102",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2931,
+      "latency_ms": 3294.302,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q103",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2458,
+      "latency_ms": 2600.761,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q104",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2622,
+      "latency_ms": 2808.064,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.75
+      }
+    },
+    {
+      "question_id": "q105",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2744,
+      "latency_ms": 2163.681,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q106",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2628,
+      "latency_ms": 2150.113,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q107",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2487,
+      "latency_ms": 931.9,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q108",
+      "status": "ok",
+      "answer_status": "invalid",
+      "error": "E2 的引文不在原文中，回答未通过校验。",
+      "tokens": 2885,
+      "latency_ms": 2862.597,
+      "metrics": {
+        "schema_success": 0.0,
+        "quote_integrity": 0.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q109",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2780,
+      "latency_ms": 1550.974,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q110",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2617,
+      "latency_ms": 2834.563,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q111",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2870,
+      "latency_ms": 2745.891,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q112",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2900,
+      "latency_ms": 3109.302,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q113",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2280,
+      "latency_ms": 1374.28,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q114",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 7509,
+      "latency_ms": 5371.465,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q115",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2547,
+      "latency_ms": 1329.78,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    },
+    {
+      "question_id": "q116",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2609,
+      "latency_ms": 1435.375,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q117",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 3243,
+      "latency_ms": 1159.236,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q118",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 3304,
+      "latency_ms": 1553.078,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q119",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2614,
+      "latency_ms": 1780.984,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q121",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2480,
+      "latency_ms": 2018.79,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q122",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2670,
+      "latency_ms": 1747.62,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q123",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2792,
+      "latency_ms": 3009.314,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q124",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2382,
+      "latency_ms": 1354.457,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q125",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2500,
+      "latency_ms": 2247.234,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q126",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2463,
+      "latency_ms": 2352.559,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    },
+    {
+      "question_id": "q127",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 5544,
+      "latency_ms": 4375.081,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    },
+    {
+      "question_id": "q128",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2747,
+      "latency_ms": 1817.997,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q129",
+      "status": "ok",
+      "answer_status": "answered",
+      "error": null,
+      "tokens": 2647,
+      "latency_ms": 3711.854,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 0.3333333333333333,
+        "gold_point_citation_recall": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "q130",
+      "status": "ok",
+      "answer_status": "partial",
+      "error": null,
+      "tokens": 2349,
+      "latency_ms": 1764.424,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    }
+  ],
+  "notes": [
+    "Failed or schema-invalid answers stay in the denominator and are scored 0.",
+    "Empty-gold questions are excluded from ratio metrics (n is smaller) but not from schema_success or status counts.",
+    "Bootstrap intervals are descriptive: the benchmark is a fixed set, not a random sample."
+  ]
+}

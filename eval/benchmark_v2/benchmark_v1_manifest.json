@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "created_at": "2026-10-25T03:17:25.731313+00:00",
+  "freeze_id": "2f4f9307996edc27358513f9411cae8584528a5118a9f4e8b49b9f716ab32ab3",
+  "manifest_hash": "2f4f9307996edc27358513f9411cae8584528a5118a9f4e8b49b9f716ab32ab3",
+  "questions_sha256": "8af2334a22646eecdca59d4b3084dd9e5e32f6c5d5b742dbf083b2067106ffd0",
+  "qrels_sha256": "1325bc90473b7c51976acc7d7c45f10d55f58b4baee035eefaf37fca7e2f048c",
+  "artifacts": {
+    "questions": {
+      "path": "eval\\benchmark_v2\\questions.curated.jsonl",
+      "sha256": "8af2334a22646eecdca59d4b3084dd9e5e32f6c5d5b742dbf083b2067106ffd0",
+      "kind": "file",
+      "size_bytes": 51548,
+      "count": 31,
+      "question_ids": [
+        "q001",
+        "q002",
+        "q004",
+        "q005",
+        "q007",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021",
+        "q023",
+        "q025",
+        "q027",
+        "q028",
+        "q029",
+        "q030",
+        "q032",
+        "q033",
+        "q035",
+        "q036",
+        "q037",
+        "q038",
+        "q040"
+      ],
+      "types": {
+        "factual": 6,
+        "mechanism": 8,
+        "multi_hop": 3,
+        "numeric": 14
+      },
+      "answerability": {
+        "answerable": 31
+      },
+      "review_status": {
+        "approved": 31
+      },
+      "gold_point_count": 68
+    },
+    "qrels": {
+      "path": "eval\\benchmark_v2\\qrels.curated.jsonl",
+      "sha256": "1325bc90473b7c51976acc7d7c45f10d55f58b4baee035eefaf37fca7e2f048c",
+      "kind": "file",
+      "size_bytes": 4994,
+      "count": 31,
+      "with_gold": 31,
+      "without_gold": 0,
+      "gold_parent_id_count": 42,
+      "answerability": {
+        "answerable": 31
+      }
+    },
+    "splits": {
+      "path": "eval\\benchmark_v2\\splits.draft.json",
+      "sha256": "46b0d3d60c4256163e188052c5c51bf1719fec4078e590c970888833af028c3c",
+      "kind": "file",
+      "size_bytes": 345848
+    },
+    "index_manifest": {
+      "path": "eval\\benchmark_v2\\index_manifest.json",
+      "sha256": "584c1bd3929820e2873b9ea7dc755fa9e962de2400ad46207e41bc93a1d267d3",
+      "kind": "file",
+      "size_bytes": 19368
+    },
+    "review_v1": {
+      "path": "eval\\benchmark_v2\\review_v1.json",
+      "sha256": "581c8296e4d922b98e060695cd9ef62179c3e5674c5e7bfa556827ffb0c75fdb",
+      "kind": "file",
+      "size_bytes": 501
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "question_id": "q002",
+  "system": "fixed_rag",
+  "status": "ok",
+  "answer_status": "answered",
+  "answer_source": "model",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": null,
+  "raw_response": "{\"status\":\"answered\",\"points\":[{\"text\":\"refusal_correctness 的跨模型极差为 0.478–0.870，即 39 个百分点（0–1 量表）。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"The largest cross-provider spread sits in refusal_correctness (0.478–0.870, a 39-point gap on a 0–1 scale)\"}]},{\"text\":\"section_coverage 的跨模型极差为 0.636–0.955，即 32 个百分点。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"section_coverage (0.636–0.955, a 32-point gap)\"}]},{\"text\":\"factual_accuracy 的极差为 4.745–5.000，在 1–5 量表上仅 0.255 分。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"factual_accuracy (4.745–5.000, a 0.255-point gap on a 1–5 scale)\"}]},{\"text\":\"completeness 的极差为 4.571–4.980，仅 0.409 分。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"completeness (4.571–4.980, a 0.409-point gap)\"}]},{\"text\":\"作者总体解读为：citation-grounding 指标能区分模型，而 evaluator 指标基本饱和。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"The citation-grounding metrics discriminate; the evaluator metrics largely saturate.\"}]},{\"text\":\"作者进一步解读：当前模型在所问的事实类主张上普遍正确，但在选择哪些证据引用、这些证据是否可验证上差异显著——这正是 citation 指标旨在揭示的区分。\",\"citations\":[{\"id\":\"E4\",\"quote\":\"“current-generation models are uniformly correct on the kinds of factual claims the dataset asks about, but they vary substantially in which evidence they choose to cite and whether that evidence is verifiable”\"},{\"id\":\"E4\",\"quote\":\"exactly the distinction the citation metrics were designed to\"}]}],\"limitations\":[\"E1 中“We read this as”一句被截断，因此作者完整解读只能依据 E4 的对应段落补全，未覆盖其后可能存在的其他论述。\"]}",
+  "usage": {
+    "completion_tokens": 499,
+    "prompt_tokens": 2532,
+    "total_tokens": 3031,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 2304,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 2304,
+    "prompt_cache_miss_tokens": 228
+  },
+  "tokens": 3031,
+  "latency_ms": 2502.938,
+  "answer_latency_ms": 2502.938,
+  "retrieval_latency_ms": 0.0,
+  "tool_calls": 0,
+  "retrieval_rounds": 0,
+  "stop_reason": "precomputed_retrieval",
+  "retrieved_parent_ids": [
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p1:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p9:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2",
+    "2607.11074v1:16754d9cb8c4:clean2:p4:g1:c3",
+    "2607.11074v1:16754d9cb8c4:clean2:p4:g1:c2"
+  ],
+  "selected_evidence_ids": [],
+  "candidate_ids": [],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 6
+    },
+    {
+      "id": "E2",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p1:g1:c1",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 1
+    },
+    {
+      "id": "E3",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p9:g1:c1",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 9
+    },
+    {
+      "id": "E4",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 6
+    },
+    {
+      "id": "E5",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p4:g1:c3",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 4
+    },
+    {
+      "id": "E6",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p4:g1:c2",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 4
+    }
+  ],
+  "cited_evidence_ids": [
+    "E1",
+    "E4"
+  ],
+  "cited_parent_ids": [
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2"
+  ],
+  "gold_parent_ids": [
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2"
+  ],
+  "gold_point_count": 3,
+  "metrics": {
+    "schema_success": 1.0,
+    "quote_integrity": 1.0,
+    "cited_gold_parent_recall": 1.0,
+    "gold_point_citation_recall": 1.0
+  },
+  "trace": [],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:20+00:00",
+  "run_signature": "f4593fc163630076efe37e9e7c67a2783aff2c183bebdc22c807f174837ac439"
+}

@@ -1,0 +1,27 @@
+{
+  "research_goal": "示例：描述你想持续关注的研究方向（请替换为你自己的目标）",
+  "topics": [
+    "示例主题一",
+    "示例主题二"
+  ],
+  "preferred_methods": [
+    "示例方法"
+  ],
+  "less_interested": [],
+  "top_k": 3,
+  "min_score": 60,
+  "search": {
+    "lookback_days": 30,
+    "max_candidates": 12,
+    "per_query_limit": 12,
+    "groups": [
+      {
+        "name": "Example",
+        "any_terms": [
+          "machine learning"
+        ],
+        "require_any_terms": []
+      }
+    ]
+  }
+}

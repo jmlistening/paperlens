@@ -1,0 +1,57 @@
+{
+  "control": {
+    "run_dir": "eval\\benchmark_v2\\runs\\eval31",
+    "system": "hybrid_rrf_top6",
+    "questions": 31
+  },
+  "treatment": {
+    "run_dir": "eval\\benchmark_v2\\runs\\eval31_rerank",
+    "system": "hybrid_rrf_rerank_top6",
+    "questions": 31
+  },
+  "comparisons": [
+    {
+      "metric": "recall@6",
+      "n_pairs": 31,
+      "control_mean": 0.7580645161290323,
+      "treatment_mean": 0.9032258064516129,
+      "mean_delta": 0.14516129032258066,
+      "ci95_low": 0.03225806451612903,
+      "ci95_high": 0.27419354838709675,
+      "wins": 6,
+      "losses": 1,
+      "ties": 24,
+      "n_bootstrap": 10000,
+      "seed": 20261025
+    },
+    {
+      "metric": "ndcg@10",
+      "n_pairs": 31,
+      "control_mean": 0.6055331784384214,
+      "treatment_mean": 0.8474911915432112,
+      "mean_delta": 0.24195801310478984,
+      "ci95_low": 0.12152648976488774,
+      "ci95_high": 0.3716138985897659,
+      "wins": 16,
+      "losses": 3,
+      "ties": 12,
+      "n_bootstrap": 10000,
+      "seed": 20261025
+    },
+    {
+      "metric": "mrr@10",
+      "n_pairs": 31,
+      "control_mean": 0.5672043010752689,
+      "treatment_mean": 0.8602150537634408,
+      "mean_delta": 0.29301075268817206,
+      "ci95_low": 0.15053763440860218,
+      "ci95_high": 0.4354838709677419,
+      "wins": 16,
+      "losses": 2,
+      "ties": 13,
+      "n_bootstrap": 10000,
+      "seed": 20261025
+    }
+  ],
+  "note": "Descriptive paired bootstrap on a fixed benchmark; no pre-registration or multiple-comparison correction."
+}

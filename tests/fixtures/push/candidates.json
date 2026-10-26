@@ -1,0 +1,29 @@
+[
+  {
+    "arxiv_id": "2601.90001v1",
+    "title": "Retrieval Augmented Generation for Scientific Literature Review",
+    "abstract": "We present a retrieval augmented generation pipeline that grounds literature review answers in cited evidence passages.",
+    "authors": ["A. Author", "B. Author"],
+    "published": "2026-10-24T18:00:00+00:00",
+    "updated": "2026-10-24T18:00:00+00:00",
+    "categories": ["cs.CL", "cs.IR"]
+  },
+  {
+    "arxiv_id": "2601.90002v1",
+    "title": "A Survey of Database Index Maintenance",
+    "abstract": "This survey compares index maintenance strategies for analytical database systems.",
+    "authors": ["C. Author"],
+    "published": "2026-10-24T18:05:00+00:00",
+    "updated": "2026-10-24T18:05:00+00:00",
+    "categories": ["cs.DB"]
+  },
+  {
+    "arxiv_id": "2601.90003v1",
+    "title": "Hardware Energy Profiling for Embedded Accelerators",
+    "abstract": "We profile the energy consumption of embedded hardware accelerators without retrieval or agent methods.",
+    "authors": ["D. Author"],
+    "published": "2026-10-24T18:10:00+00:00",
+    "updated": "2026-10-24T18:10:00+00:00",
+    "categories": ["cs.AR"]
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "question_id": "q004",
+  "system": "agent_single",
+  "status": "ok",
+  "answer_status": "insufficient",
+  "answer_source": "harness_abstention",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": "deepseek-flash",
+  "raw_response": {
+    "status": "insufficient",
+    "points": [],
+    "limitations": [
+      "未找到任何关于神经重排序器训练集与验证集划分的说明",
+      "未找到训练 epoch 数的说明"
+    ]
+  },
+  "usage": null,
+  "tokens": 5632,
+  "latency_ms": 2483.942,
+  "answer_latency_ms": 0.0,
+  "retrieval_latency_ms": 213.671,
+  "tool_calls": 1,
+  "retrieval_rounds": 1,
+  "stop_reason": "round_budget",
+  "retrieved_parent_ids": [],
+  "selected_evidence_ids": [],
+  "candidate_ids": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20"
+  ],
+  "evidence": [],
+  "cited_evidence_ids": [],
+  "cited_parent_ids": [],
+  "gold_parent_ids": [
+    "2608.01468v1:16754d9cb8c4:clean2:p5:g1:c1"
+  ],
+  "gold_point_count": 2,
+  "metrics": {
+    "schema_success": null,
+    "quote_integrity": null,
+    "cited_gold_parent_recall": 0.0,
+    "gold_point_citation_recall": 0.0
+  },
+  "trace": [
+    {
+      "kind": "retrieval",
+      "round": 1,
+      "tool": "search_dense",
+      "query": "在神经重排序器训练中，作者如何划分训练集与验证集，并训练了多少个 epoch？",
+      "candidate_count": 20,
+      "new_count": 20,
+      "sources": [
+        {
+          "id": "C1",
+          "paper": "2610.26339v1",
+          "page": 10
+        },
+        {
+          "id": "C2",
+          "paper": "2607.04610v1",
+          "page": 1
+        },
+        {
+          "id": "C3",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C4",
+          "paper": "2607.06618v2",
+          "page": 7
+        },
+        {
+          "id": "C5",
+          "paper": "2607.20284v1",
+          "page": 6
+        },
+        {
+          "id": "C6",
+          "paper": "2608.01565v1",
+          "page": 1
+        },
+        {
+          "id": "C7",
+          "paper": "2607.03028v1",
+          "page": 7
+        },
+        {
+          "id": "C8",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C9",
+          "paper": "2607.06618v2",
+          "page": 6
+        },
+        {
+          "id": "C10",
+          "paper": "2607.10463v1",
+          "page": 7
+        },
+        {
+          "id": "C11",
+          "paper": "2607.20926v1",
+          "page": 4
+        },
+        {
+          "id": "C12",
+          "paper": "2607.04610v1",
+          "page": 1
+        },
+        {
+          "id": "C13",
+          "paper": "2012.13185v3",
+          "page": 8
+        },
+        {
+          "id": "C14",
+          "paper": "2608.30214v1",
+          "page": 7
+        },
+        {
+          "id": "C15",
+          "paper": "2607.20284v1",
+          "page": 6
+        },
+        {
+          "id": "C16",
+          "paper": "2610.26339v1",
+          "page": 3
+        },
+        {
+          "id": "C17",
+          "paper": "2607.06618v2",
+          "page": 4
+        },
+        {
+          "id": "C18",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C19",
+          "paper": "2102.04643v1",
+          "page": 8
+        },
+        {
+          "id": "C20",
+          "paper": "2607.20926v1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 1,
+      "assessment": "insufficient",
+      "selected_ids": [],
+      "action": "search_bm25",
+      "query": "neural reranker training validation split number of epochs",
+      "missing": [
+        "未找到任何关于神经重排序器训练集与验证集划分的说明",
+        "未找到训练 epoch 数的说明"
+      ],
+      "reason": "现有候选均为无关片段或仅提及重排序器名称，需补查训练划分与 epoch 设置"
+    }
+  ],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:51+00:00",
+  "run_signature": "532ce9a088a0354d961b63147e1a2944d4fca34dd2eef835c4bd00943b9bf30b"
+}

@@ -1,0 +1,307 @@
+{
+  "question_id": "q001",
+  "system": "agent_multi",
+  "status": "ok",
+  "answer_status": "answered",
+  "answer_source": "model",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": "deepseek-flash",
+  "raw_response": "{\"status\":\"answered\",\"points\":[{\"text\":\"用于大规模领域对齐的主要语料库是 ISTEX 数据库的 SSH 子集\",\"citations\":[{\"id\":\"E1\",\"quote\":\"The primary corpus for large-scale domain alignment is the SSH subset of the ISTEX database4.\"}]},{\"text\":\"该 SSH 子集约包含 300 万篇文档\",\"citations\":[{\"id\":\"E1\",\"quote\":\"For the purposes of ReSearch_SSH, an SSH-specific ex-traction (approximately 3 million documents) has been prepared based on disciplinary classifications and quality criteria (see Table 1).\"},{\"id\":\"E1\",\"quote\":\"Total documents ∼3,000,000\"}]}],\"limitations\":[]}",
+  "usage": {
+    "completion_tokens": 152,
+    "prompt_tokens": 805,
+    "total_tokens": 957,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 640,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 165
+  },
+  "tokens": 12818,
+  "latency_ms": 4480.352,
+  "answer_latency_ms": 1371.678,
+  "retrieval_latency_ms": 459.461,
+  "tool_calls": 2,
+  "retrieval_rounds": 2,
+  "stop_reason": "sufficient",
+  "retrieved_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1"
+  ],
+  "selected_evidence_ids": [
+    "C21"
+  ],
+  "candidate_ids": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C31",
+    "C32"
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 4
+    }
+  ],
+  "cited_evidence_ids": [
+    "E1"
+  ],
+  "cited_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1"
+  ],
+  "gold_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1"
+  ],
+  "gold_point_count": 2,
+  "metrics": {
+    "schema_success": 1.0,
+    "quote_integrity": 1.0,
+    "cited_gold_parent_recall": 1.0,
+    "gold_point_citation_recall": 0.5
+  },
+  "trace": [
+    {
+      "kind": "retrieval",
+      "round": 1,
+      "tool": "search_dense",
+      "query": "ReSearch_SSH用例中，用于大规模领域对齐的主要语料库是哪个数据库的SSH子集？该SSH子集大约包含多少篇文档？",
+      "candidate_count": 20,
+      "new_count": 20,
+      "sources": [
+        {
+          "id": "C1",
+          "paper": "2511.16283v1",
+          "page": 5
+        },
+        {
+          "id": "C2",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C3",
+          "paper": "2607.20926v1",
+          "page": 4
+        },
+        {
+          "id": "C4",
+          "paper": "2608.01565v1",
+          "page": 1
+        },
+        {
+          "id": "C5",
+          "paper": "2607.20284v1",
+          "page": 6
+        },
+        {
+          "id": "C6",
+          "paper": "2607.04610v1",
+          "page": 1
+        },
+        {
+          "id": "C7",
+          "paper": "2608.30214v1",
+          "page": 3
+        },
+        {
+          "id": "C8",
+          "paper": "2607.20926v1",
+          "page": 3
+        },
+        {
+          "id": "C9",
+          "paper": "2610.26339v1",
+          "page": 10
+        },
+        {
+          "id": "C10",
+          "paper": "2607.10463v1",
+          "page": 7
+        },
+        {
+          "id": "C11",
+          "paper": "2608.01565v1",
+          "page": 8
+        },
+        {
+          "id": "C12",
+          "paper": "2607.06618v2",
+          "page": 6
+        },
+        {
+          "id": "C13",
+          "paper": "2011.13137v2",
+          "page": 4
+        },
+        {
+          "id": "C14",
+          "paper": "2607.20926v1",
+          "page": 1
+        },
+        {
+          "id": "C15",
+          "paper": "2608.30214v1",
+          "page": 6
+        },
+        {
+          "id": "C16",
+          "paper": "2607.19238v1",
+          "page": 1
+        },
+        {
+          "id": "C17",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C18",
+          "paper": "2607.16604v2",
+          "page": 1
+        },
+        {
+          "id": "C19",
+          "paper": "2511.16283v1",
+          "page": 5
+        },
+        {
+          "id": "C20",
+          "paper": "2412.10704v2",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 1,
+      "assessment": "insufficient",
+      "selected_ids": [],
+      "action": "search_dense",
+      "query": "ReSearch SSH corpus database subset number of documents domain alignment",
+      "missing": [
+        "ReSearch_SSH 用例所用 SSH 子集所属的数据库名称",
+        "该 SSH 子集的大致文档数量"
+      ],
+      "reason": "现有候选均未涉及 ReSearch 的 SSH 语料库及其文档规模，需针对该术语补查"
+    },
+    {
+      "kind": "retrieval",
+      "round": 2,
+      "tool": "search_dense",
+      "query": "ReSearch SSH corpus database subset number of documents domain alignment",
+      "candidate_count": 12,
+      "new_count": 12,
+      "sources": [
+        {
+          "id": "C21",
+          "paper": "2607.05956v1",
+          "page": 4
+        },
+        {
+          "id": "C22",
+          "paper": "2607.05956v1",
+          "page": 7
+        },
+        {
+          "id": "C23",
+          "paper": "2607.05956v1",
+          "page": 3
+        },
+        {
+          "id": "C24",
+          "paper": "2609.36392v1",
+          "page": 3
+        },
+        {
+          "id": "C25",
+          "paper": "2608.01565v1",
+          "page": 7
+        },
+        {
+          "id": "C26",
+          "paper": "2607.05956v1",
+          "page": 7
+        },
+        {
+          "id": "C27",
+          "paper": "2512.10435v1",
+          "page": 7
+        },
+        {
+          "id": "C28",
+          "paper": "2607.05956v1",
+          "page": 4
+        },
+        {
+          "id": "C29",
+          "paper": "2609.27784v1",
+          "page": 9
+        },
+        {
+          "id": "C30",
+          "paper": "2607.05956v1",
+          "page": 4
+        },
+        {
+          "id": "C31",
+          "paper": "2607.23006v1",
+          "page": 6
+        },
+        {
+          "id": "C32",
+          "paper": "2607.21340v2",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 2,
+      "assessment": "sufficient",
+      "selected_ids": [
+        "C21"
+      ],
+      "action": "finish",
+      "query": "",
+      "missing": [],
+      "reason": "C21明确说明主要语料库为ISTEX数据库的SSH子集，约含300万篇文档，直接覆盖两项要点。"
+    }
+  ],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:04:00+00:00",
+  "run_signature": "8b63f287ea2ead7cc5a7da62799721999ddfbfe8cb4dc569e9a3235086d5a6ff"
+}

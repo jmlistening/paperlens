@@ -1,0 +1,195 @@
+{
+  "version": "agent_eval_v1",
+  "generated_by": "eval/agent_eval.py",
+  "created_at": "2026-10-25T06:03:25+00:00",
+  "system": "fixed_rag",
+  "benchmark_dir": "eval\\benchmark_v2\\eval120",
+  "retrieval_run": "eval\\benchmark_v2\\runs\\eval120_rerank\\hybrid_rrf_rerank_top6",
+  "retrieval_system": "hybrid_rrf_rerank_top6",
+  "answer_model": "deepseek-flash",
+  "benchmark_fingerprint": "cb60fa504e7fd6cc39314c2b4fc3b0746c78c9686d18c0a149b24a1097aaa497",
+  "benchmark_files": {
+    "questions_sha256": "b37ea872ef48cc05ba980f8c6517efd6c285624eb78dd765a1d8976ce5cb1d08",
+    "qrels_sha256": "c78358326cbc91c2e45ac4c99c4665cc725eca7dd6d94a5965536c9341c3131d",
+    "index_manifest_sha256": "8a4d7cf12fc642faff5d18d933b2fe897d3c38c626f9e720d446f62fd01da48b",
+    "fingerprint": "cb60fa504e7fd6cc39314c2b4fc3b0746c78c9686d18c0a149b24a1097aaa497"
+  },
+  "disclaimer": "Citation-level evaluation only: schema_success, quote_integrity, cited_gold_parent_recall and gold_point_citation_recall measure JSON validity, exact quote copying and whether gold parents/quotes were present in cited evidence. They are NOT answer accuracy, correctness, completeness or faithfulness. No LLM judge and no human review are used. Harness-generated abstentions (no answer-model call) are excluded from schema/quote means. fixed_rag consumes a precomputed retrieval run; agent systems retrieve locally. Both use the same six-unit evidence budget and answer prompt.",
+  "n": 5,
+  "n_failed": 1,
+  "failures": [
+    "q009"
+  ],
+  "status_counts": {
+    "answered": 4,
+    "partial": 0,
+    "insufficient": 0,
+    "invalid": 1
+  },
+  "stop_reason_counts": {
+    "precomputed_retrieval": 5
+  },
+  "metrics": {
+    "schema_success": {
+      "mean": 0.8,
+      "n": 5,
+      "label": "Schema success"
+    },
+    "quote_integrity": {
+      "mean": 0.8,
+      "n": 5,
+      "label": "Quote integrity"
+    },
+    "cited_gold_parent_recall": {
+      "mean": 0.8,
+      "n": 5,
+      "label": "Cited gold parent recall"
+    },
+    "gold_point_citation_recall": {
+      "mean": 0.6,
+      "n": 5,
+      "label": "Gold point citation recall"
+    }
+  },
+  "tool_calls": {
+    "total": 0,
+    "mean": 0.0,
+    "max": 0
+  },
+  "retrieval_rounds": {
+    "total": 0,
+    "mean": 0.0,
+    "max": 0
+  },
+  "tokens": {
+    "total": 12967,
+    "mean": 2593.4
+  },
+  "latency_ms": {
+    "n": 5,
+    "mean": 1752.2635999999998,
+    "p50": 1631.271,
+    "p95": 2350.5904
+  },
+  "answer_latency_ms": {
+    "n": 5,
+    "mean": 1752.2635999999998,
+    "p50": 1631.271,
+    "p95": 2350.5904
+  },
+  "retrieval_latency_ms": {
+    "n": 5,
+    "mean": 0.0,
+    "p50": 0.0,
+    "p95": 0.0
+  },
+  "per_question": [
+    {
+      "question_id": "q001",
+      "status": "ok",
+      "answer_status": "answered",
+      "answer_source": "model",
+      "stop_reason": "precomputed_retrieval",
+      "error": null,
+      "tool_calls": 0,
+      "retrieval_rounds": 0,
+      "tokens": 2285,
+      "latency_ms": 1741.2,
+      "answer_latency_ms": 1741.2,
+      "retrieval_latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    },
+    {
+      "question_id": "q002",
+      "status": "ok",
+      "answer_status": "answered",
+      "answer_source": "model",
+      "stop_reason": "precomputed_retrieval",
+      "error": null,
+      "tool_calls": 0,
+      "retrieval_rounds": 0,
+      "tokens": 3031,
+      "latency_ms": 2502.938,
+      "answer_latency_ms": 2502.938,
+      "retrieval_latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q004",
+      "status": "ok",
+      "answer_status": "answered",
+      "answer_source": "model",
+      "stop_reason": "precomputed_retrieval",
+      "error": null,
+      "tool_calls": 0,
+      "retrieval_rounds": 0,
+      "tokens": 2833,
+      "latency_ms": 1380.118,
+      "answer_latency_ms": 1380.118,
+      "retrieval_latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 1.0
+      }
+    },
+    {
+      "question_id": "q009",
+      "status": "ok",
+      "answer_status": "invalid",
+      "answer_source": "model",
+      "stop_reason": "precomputed_retrieval",
+      "error": "E2 的引文不在原文中，回答未通过校验。",
+      "tool_calls": 0,
+      "retrieval_rounds": 0,
+      "tokens": 2157,
+      "latency_ms": 1505.791,
+      "answer_latency_ms": 1505.791,
+      "retrieval_latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 0.0,
+        "quote_integrity": 0.0,
+        "cited_gold_parent_recall": 0.0,
+        "gold_point_citation_recall": 0.0
+      }
+    },
+    {
+      "question_id": "q010",
+      "status": "ok",
+      "answer_status": "answered",
+      "answer_source": "model",
+      "stop_reason": "precomputed_retrieval",
+      "error": null,
+      "tool_calls": 0,
+      "retrieval_rounds": 0,
+      "tokens": 2661,
+      "latency_ms": 1631.271,
+      "answer_latency_ms": 1631.271,
+      "retrieval_latency_ms": 0.0,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": 1.0,
+        "gold_point_citation_recall": 0.5
+      }
+    }
+  ],
+  "notes": [
+    "Failed or schema-invalid answers stay in the denominator and score 0.",
+    "Empty-gold questions are excluded only from ratio metrics; schema_success keeps them.",
+    "tool_calls counts successful search-tool invocations; fixed_rag is 0 (precomputed).",
+    "retrieval_rounds counts completed agent coverage-decision rounds; fixed_rag is 0.",
+    "latency_ms is whole-question wall time; answer_latency_ms isolates the answer call."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "snapshot_schema_version": 1,
+  "created_at": "2026-10-25T01:59:55.183134+00:00",
+  "root": "D:\\paperlens",
+  "dev_index": {
+    "paper_count": 8,
+    "chunk_count": 453,
+    "manifest_source_papers": 8,
+    "manifest_outputs": 5,
+    "vector": {
+      "model_name": "intfloat/multilingual-e5-small",
+      "model_revision": null,
+      "dimension": 384,
+      "index_type": "IndexFlatIP",
+      "parent_chunk_count": 453,
+      "vector_count": 460
+    }
+  },
+  "qa_history": {
+    "answer_result_files": 11,
+    "qa_run_files": 5,
+    "agent_run_files": 5
+  },
+  "datasets": {
+    "dataset_v1": {
+      "papers": 1000,
+      "queries": 3,
+      "duplicate_hits": 36
+    },
+    "dataset_history_v1": {
+      "papers": 1133,
+      "queries": 16,
+      "duplicate_hits": 74,
+      "excluded_hits": 0
+    }
+  },
+  "sqlite_counts": {
+    "reading": {
+      "feedback_events": 1,
+      "imports": 2,
+      "papers": 5
+    },
+    "delivery": {
+      "attempts": 2,
+      "deliveries": 6,
+      "events": 4,
+      "sqlite_sequence": 1
+    }
+  },
+  "hashes": {
+    "library_manifest": "df227819bfb2ae655df141d57fa62dee28eee63ff58cca9f7e7dfdcf2bac3005",
+    "corpus_clean": "2dbbcc2e8907d6129ccfa19c6c08d8492c9cd3f7c3e165d6b74f3bf0e059791f",
+    "vector_store": "8f732fc36270df1fac511857a1668ff9f9f9916eb2aa623c7efd0f8c44f70cd0",
+    "dataset_v1_state": "b757c9f26baca0f3a339cd08e58a08e15db7a9ee97948f7ac4f0cbdc5a4e66ab",
+    "dataset_history_v1_state": "fe47250e8f5614c3339e6b65ab3ab0d72e36a509db04e80cffe232c0d70a8a2e"
+  }
+}

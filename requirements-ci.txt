@@ -1,0 +1,18 @@
+# Minimal Linux CI dependencies for the offline test suite.
+# No torch/sentence-transformers are needed because tests inject fake embedders.
+arxiv==4.0.1
+faiss-cpu==1.13.2
+httpx==0.28.1
+Jinja2==3.1.6
+numpy==2.4.6
+openai==3.31.0
+pandas==3.0.6
+pydantic==2.14.1
+PyMuPDF==1.28.2
+python-dotenv==1.2.4
+PyYAML==6.0.3
+rank-bm25==0.2.2
+requests==2.34.2
+scikit-learn==1.9.1
+streamlit==1.66.0
+tqdm==4.70.1

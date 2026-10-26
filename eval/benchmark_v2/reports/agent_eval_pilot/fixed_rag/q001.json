@@ -1,0 +1,101 @@
+{
+  "question_id": "q001",
+  "system": "fixed_rag",
+  "status": "ok",
+  "answer_status": "answered",
+  "answer_source": "model",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": null,
+  "raw_response": "{\"status\":\"answered\",\"points\":[{\"text\":\"用于大规模领域对齐的主要语料库是 ISTEX 数据库的 SSH 子集。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"The primary corpus for large-scale domain alignment is the SSH subset of the ISTEX database4.\"}]},{\"text\":\"该 SSH 子集约包含 300 万篇文档。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"For the purposes of ReSearch_SSH, an SSH-specific ex-traction (approximately 3 million documents) has been prepared based on disciplinary classifications and quality criteria (see Table 1).\"},{\"id\":\"E1\",\"quote\":\"Total documents ∼3,000,000 Languages represented 60+ Full-text format XML/TEI Metadata license Etalab (open)\"}]}],\"limitations\":[]}",
+  "usage": {
+    "completion_tokens": 172,
+    "prompt_tokens": 2113,
+    "total_tokens": 2285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 1920,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 193
+  },
+  "tokens": 2285,
+  "latency_ms": 1741.2,
+  "answer_latency_ms": 1741.2,
+  "retrieval_latency_ms": 0.0,
+  "tool_calls": 0,
+  "retrieval_rounds": 0,
+  "stop_reason": "precomputed_retrieval",
+  "retrieved_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1",
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c2",
+    "2607.05956v1:16754d9cb8c4:clean2:p3:g2:c2",
+    "2607.05956v1:16754d9cb8c4:clean2:p7:g1:c1",
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g2:c1",
+    "2607.05956v1:16754d9cb8c4:clean2:p3:g2:c1"
+  ],
+  "selected_evidence_ids": [],
+  "candidate_ids": [],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 4
+    },
+    {
+      "id": "E2",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c2",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 4
+    },
+    {
+      "id": "E3",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p3:g2:c2",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 3
+    },
+    {
+      "id": "E4",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p7:g1:c1",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 7
+    },
+    {
+      "id": "E5",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p4:g2:c1",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 4
+    },
+    {
+      "id": "E6",
+      "parent_chunk_id": "2607.05956v1:16754d9cb8c4:clean2:p3:g2:c1",
+      "title": "Integrating knowledge graphs and multilingual scholarly corpora for domain-adaptive LLMs in SSH",
+      "page_number": 3
+    }
+  ],
+  "cited_evidence_ids": [
+    "E1"
+  ],
+  "cited_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1"
+  ],
+  "gold_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1"
+  ],
+  "gold_point_count": 2,
+  "metrics": {
+    "schema_success": 1.0,
+    "quote_integrity": 1.0,
+    "cited_gold_parent_recall": 1.0,
+    "gold_point_citation_recall": 0.5
+  },
+  "trace": [],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:18+00:00",
+  "run_signature": "7360b18cc0bffab883c34c2d94d301d9c9f74dcd396823bb1a103fc52f82bf01"
+}

@@ -1,0 +1,1020 @@
+{
+  "created_at": "2026-10-20T08:46:13.238385+00:00",
+  "query": "RCER 如何重构不同证据之间的关系，并利用这些关系进行迭代检索？请根据论文说明主要步骤，并给出对应证据。",
+  "model": "deepseek-flash",
+  "corpus_sha256": "2dbbcc2e8907d6129ccfa19c6c08d8492c9cd3f7c3e165d6b74f3bf0e059791f",
+  "input_sha256": "0e02c9fe84ad8fe1e0a9919787415e53b1c85e117ad8244beab26869e4d1ad92",
+  "prompt_version": "bounded_retrieval_agent_v1",
+  "usage": {
+    "known_total_tokens": 26992,
+    "unknown_usage_calls": 0,
+    "complete": true
+  },
+  "answer": {
+    "status": "answered",
+    "points": [
+      {
+        "text": "RCER 让检索控制器联合分析已累积的段落，判断新证据与既有事实的关系，以及还需要进一步调查什么，并据此输出待查关系、联合考虑的段落、关系分析和下一个子问题/查询。",
+        "citations": [
+          {
+            "id": "E1",
+            "quote": "An LLM-based retrieval controller jointly analyzes the passages to determine how new evidence connects with earlier facts and what requires further investigation."
+          },
+          {
+            "id": "E1",
+            "quote": "Newly established entity correspondences can make an earlier fact a premise for the current investigation. Dynamic problem decomposition translates these judgments into the next subquestion, specifying the entity and relation that require further evidence."
+          }
+        ]
+      },
+      {
+        "text": "关系分析以条目形式记录：每条把关系与其当前解释（含未解决部分）配对，并用段落标识连接到检索文本。",
+        "citations": [
+          {
+            "id": "E1",
+            "quote": "The relational analysis Mt expresses their current interpretation through mt entries"
+          },
+          {
+            "id": "E1",
+            "quote": "Each entry pairs a relation rtj with its current interpretation utj, including unresolved aspects. The passage identifiers Btj connect this interpretation to the retrieved text."
+          }
+        ]
+      },
+      {
+        "text": "控制器把信息需求表达为下一轮检索查询，用于检索尚未获取的语料段落。",
+        "citations": [
+          {
+            "id": "E1",
+            "quote": "The controller expresses this information need as the retrieval query qt+1."
+          },
+          {
+            "id": "E1",
+            "quote": "Let Ut contain the corpus passages not yet retrieved."
+          }
+        ]
+      },
+      {
+        "text": "新检索到的段落按检索顺序追加到累积序列，查询历史也更新；下一轮基于扩展后的段落池和更新后的查询历史重新构建关系分析。",
+        "citations": [
+          {
+            "id": "E3",
+            "quote": "Newly retrieved passages are appended to the accumulated sequence in retrieval order"
+          },
+          {
+            "id": "E3",
+            "quote": "Appending qt+1 to the query history yields Ht+1. The next iteration reconstructs its relational analysis from the expanded passage pool and updated query history."
+          }
+        ]
+      },
+      {
+        "text": "检索受段落预算约束，并在满足查询重复判据时提前终止。",
+        "citations": [
+          {
+            "id": "E3",
+            "quote": "Retrieval is bounded by a passage budget B and terminates early when the query-repetition criterion is met."
+          }
+        ]
+      },
+      {
+        "text": "每轮的获取请求包含原始问题、全部已累积段落文本、来源目录、最新段落标识和查询历史，关系分析每轮都基于这些输入重新生成。",
+        "citations": [
+          {
+            "id": "E4",
+            "quote": "Each acquisition request includes the original question, all accumulated passage texts, the source catalog, the latest passage identifiers, and the query history."
+          },
+          {
+            "id": "E4",
+            "quote": "Relational analysis is generated afresh from these inputs at each round."
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "证据说明的是检索迭代与关系重构机制；附录 B 中的详细检索参数未在给定证据中展开。"
+    ]
+  },
+  "evidence": {
+    "E1": {
+      "chunk_id": "2610.19398v1:b58c4636f096:clean2:p3:g3:c1:v1",
+      "arxiv_id": "2610.19398v1",
+      "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+      "pdf_path": "data/pdfs/2610.19398v1.pdf",
+      "pdf_sha256": "bbd29e710cda3569416d44e0a863a90d587f198640a9d84312e31ef586ff0df7",
+      "source_url": "https://arxiv.org/abs/2610.19398v1",
+      "page_number": 3,
+      "group_number": 3,
+      "char_start": 0,
+      "char_end": 1205,
+      "text": "contains q together with the accumulated passages At and query history Ht. The latest batch ∆t is identified within At, whose passages retain acquisition order. An LLM-based retrieval controller jointly analyzes the passages to determine how new evidence connects with earlier facts and what requires further investigation. It generates\n\n(ft, It, Mt, qt+1) = Cθ(xt). (1)\n\nHere ft specifies the relation under investigation, with It identifying the passages considered jointly. The relational analysis Mt expresses their current interpretation through mt entries\n\nMt = [(rtj, utj, Btj)]j∈[mt]. (2)\n\nEach entry pairs a relation rtj with its current interpretation utj, including unresolved aspects. The passage identifiers Btj connect this interpretation to the retrieved text. Newly established entity correspondences can make an earlier fact a premise for the current investigation. Dynamic problem decomposition translates these judgments into the next subquestion, specifying the entity and relation that require further evidence. The controller expresses this information need as the retrieval query qt+1.\n\nLet Ut contain the corpus passages not yet retrieved. Dense retrieval returns the bt+1 passages",
+      "sources": [
+        {
+          "block_number": 2,
+          "bbox": [
+            306.14,
+            396.19,
+            526.22,
+            488.65
+          ],
+          "start": 0,
+          "end": 336
+        },
+        {
+          "block_number": 3,
+          "bbox": [
+            355.3,
+            498.24,
+            525.14,
+            510.43
+          ],
+          "start": 338,
+          "end": 370
+        },
+        {
+          "block_number": 5,
+          "bbox": [
+            305.75,
+            519.28,
+            526.31,
+            572.72
+          ],
+          "start": 372,
+          "end": 561
+        },
+        {
+          "block_number": 7,
+          "bbox": [
+            353.63,
+            580.82,
+            525.14,
+            593.87
+          ],
+          "start": 563,
+          "end": 596
+        },
+        {
+          "block_number": 11,
+          "bbox": [
+            305.8,
+            601.72,
+            526.31,
+            749.11
+          ],
+          "start": 598,
+          "end": 1108
+        },
+        {
+          "block_number": 13,
+          "bbox": [
+            306.14,
+            750.62,
+            524.41,
+            777.08
+          ],
+          "start": 1110,
+          "end": 1205
+        }
+      ],
+      "short_fragment": false,
+      "parent_chunk_id": "2610.19398v1:b58c4636f096:clean2:p3:g3:c1"
+    },
+    "E2": {
+      "chunk_id": "2610.19398v1:b58c4636f096:clean2:p11:g2:c2:v1",
+      "arxiv_id": "2610.19398v1",
+      "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+      "pdf_path": "data/pdfs/2610.19398v1.pdf",
+      "pdf_sha256": "bbd29e710cda3569416d44e0a863a90d587f198640a9d84312e31ef586ff0df7",
+      "source_url": "https://arxiv.org/abs/2610.19398v1",
+      "page_number": 11,
+      "group_number": 2,
+      "char_start": 1216,
+      "char_end": 1971,
+      "text": ", source catalog, and query history.\n\nIdentify a relationship that still requires investigation. Read the relevant sources together, reconsider entity and relation assignments, and retain unresolved alternatives. Preserve the original question and its qualifications. Record compact interpretations with their source identifiers, then formulate one focused query to obtain the missing evidence.\n\nReturn focus, read_ids, memory, and query in this order. Each memory entry records a relation, its current interpretation, and refer-enced source identifiers.\n\nReasoning Context Reconstruction\n\nInputs Original question and indexed passages from the final candidate pool.\n\nIdentify the information requirements for answering the question. For each requirement,",
+      "sources": [
+        {
+          "block_number": 16,
+          "bbox": [
+            315.27,
+            473.88,
+            516.92,
+            498.61
+          ],
+          "start": 1170,
+          "end": 1252
+        },
+        {
+          "block_number": 25,
+          "bbox": [
+            315.45,
+            505.23,
+            516.92,
+            610.99
+          ],
+          "start": 1254,
+          "end": 1610
+        },
+        {
+          "block_number": 26,
+          "bbox": [
+            315.45,
+            617.26,
+            516.91,
+            669.17
+          ],
+          "start": 1612,
+          "end": 1770
+        },
+        {
+          "block_number": 27,
+          "bbox": [
+            315.45,
+            686.4,
+            477.26,
+            697.31
+          ],
+          "start": 1772,
+          "end": 1804
+        },
+        {
+          "block_number": 28,
+          "bbox": [
+            315.27,
+            708.15,
+            515.1,
+            732.71
+          ],
+          "start": 1806,
+          "end": 1882
+        },
+        {
+          "block_number": 30,
+          "bbox": [
+            315.45,
+            739.26,
+            516.91,
+            763.82
+          ],
+          "start": 1884,
+          "end": 1971
+        }
+      ],
+      "short_fragment": false,
+      "parent_chunk_id": "2610.19398v1:b58c4636f096:clean2:p11:g2:c2"
+    },
+    "E3": {
+      "chunk_id": "2610.19398v1:b58c4636f096:clean2:p4:g1:c1:v1",
+      "arxiv_id": "2610.19398v1",
+      "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+      "pdf_path": "data/pdfs/2610.19398v1.pdf",
+      "pdf_sha256": "bbd29e710cda3569416d44e0a863a90d587f198640a9d84312e31ef586ff0df7",
+      "source_url": "https://arxiv.org/abs/2610.19398v1",
+      "page_number": 4,
+      "group_number": 1,
+      "char_start": 0,
+      "char_end": 1395,
+      "text": "with the highest cosine similarity to the query\n\n∆t+1 = Retbt+1(qt+1, Ut). (3)\n\nNewly retrieved passages are appended to the accumulated sequence in retrieval order\n\nAt+1 = (d1, . . . , dnt, d′\n\n1, . . . , d′ bt+1). (4)\n\nHere d1, . . . , dnt are the nt accumulated passages, and d′\n\n1, . . . , d′ bt+1 form the newly retrieved batch. Appending qt+1 to the query history yields Ht+1. The next iteration reconstructs its relational analysis from the expanded passage pool and updated query history. Retrieval is bounded by a passage budget B and terminates early when the query-repetition criterion is met. Retrieval settings are provided in Appendix B.\n\n3.2 Reasoning Context Reconstruction\n\nReasoning Context Reconstruction organizes complementary passages with their cross-evidence inferences into a reasoning context. After retrieval, an LLM-based passage selector performs a fresh analysis of the final candidate pool AT = (d1, . . . , dn). For question q, it identifies the infor-\n\nmation requirements and examines how candidate passages jointly satisfy them. The selector input is xs = (q, AT , K), where K ≤n specifies the num-ber of passages to retain. It returns a cross-evidence reasoning analysis z and selected indices J\n\n(z, J) = Sθ(xs). (5)\n\nThe analysis z establishes entity correspondences and relational dependencies across candidate passages. These connections determine how one",
+      "sources": [
+        {
+          "block_number": 2,
+          "bbox": [
+            70.47,
+            73.55,
+            270.16,
+            84.46
+          ],
+          "start": 0,
+          "end": 47
+        },
+        {
+          "block_number": 3,
+          "bbox": [
+            121.08,
+            93.63,
+            289.87,
+            106.48
+          ],
+          "start": 49,
+          "end": 78
+        },
+        {
+          "block_number": 4,
+          "bbox": [
+            70.87,
+            114.41,
+            289.14,
+            138.95
+          ],
+          "start": 80,
+          "end": 164
+        },
+        {
+          "block_number": 6,
+          "bbox": [
+            100.09,
+            145.94,
+            203.57,
+            160.8
+          ],
+          "start": 166,
+          "end": 193
+        },
+        {
+          "block_number": 7,
+          "bbox": [
+            201.27,
+            145.94,
+            289.87,
+            161.97
+          ],
+          "start": 195,
+          "end": 219
+        },
+        {
+          "block_number": 9,
+          "bbox": [
+            70.87,
+            168.72,
+            290.95,
+            193.46
+          ],
+          "start": 221,
+          "end": 281
+        },
+        {
+          "block_number": 13,
+          "bbox": [
+            70.87,
+            180.51,
+            289.52,
+            288.28
+          ],
+          "start": 283,
+          "end": 651
+        },
+        {
+          "block_number": 14,
+          "bbox": [
+            70.87,
+            298.99,
+            257.22,
+            309.9
+          ],
+          "start": 653,
+          "end": 689
+        },
+        {
+          "block_number": 15,
+          "bbox": [
+            69.59,
+            316.49,
+            290.95,
+            395.97
+          ],
+          "start": 691,
+          "end": 984
+        },
+        {
+          "block_number": 18,
+          "bbox": [
+            70.87,
+            397.86,
+            290.95,
+            462.97
+          ],
+          "start": 986,
+          "end": 1231
+        },
+        {
+          "block_number": 20,
+          "bbox": [
+            143.01,
+            472.13,
+            289.87,
+            484.32
+          ],
+          "start": 1233,
+          "end": 1253
+        },
+        {
+          "block_number": 24,
+          "bbox": [
+            70.53,
+            492.75,
+            289.14,
+            612.28
+          ],
+          "start": 1255,
+          "end": 1677
+        }
+      ],
+      "short_fragment": false,
+      "parent_chunk_id": "2610.19398v1:b58c4636f096:clean2:p4:g1:c1"
+    },
+    "E4": {
+      "chunk_id": "2610.19398v1:b58c4636f096:clean2:p11:g2:c1:v1",
+      "arxiv_id": "2610.19398v1",
+      "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+      "pdf_path": "data/pdfs/2610.19398v1.pdf",
+      "pdf_sha256": "bbd29e710cda3569416d44e0a863a90d587f198640a9d84312e31ef586ff0df7",
+      "source_url": "https://arxiv.org/abs/2610.19398v1",
+      "page_number": 11,
+      "group_number": 2,
+      "char_start": 0,
+      "char_end": 1396,
+      "text": "Table 10 gives the shared models and RCER settings. Dense retrieval uses cosine similarity between normalized embeddings. Passage inputs contain the title and original text. Subsequent retrieval excludes previously retrieved passage identifiers. The repetition check compares lowercase query word sets with all earlier queries, including the original question.\n\nEach acquisition request includes the original question, all accumulated passage texts, the source catalog, the latest passage identifiers, and the query history. Relational analysis is generated afresh from these inputs at each round. The final selector independently analyzes the completed candidate pool and returns its analysis followed by five distinct, increasing passage indices through constrained decoding. The answer generator receives the five selected passages and this final analysis, which can also retain relationships from unselected candidates. All modules use visi-ble structured analysis with the model’s separate thinking mode disabled.\n\nB.1 Prompt Instructions\n\nThe following boxes summarize the core instructions used by the three modules.\n\nInter-Round Relational Evidence Acquisition\n\nInputs Original question, accumulated passages, source catalog, and query history.\n\nIdentify a relationship that still requires investigation. Read the relevant sources together, reconsider entity and relation assignments, and",
+      "sources": [
+        {
+          "block_number": 5,
+          "bbox": [
+            305.8,
+            73.47,
+            526.23,
+            179.31
+          ],
+          "start": 0,
+          "end": 360
+        },
+        {
+          "block_number": 10,
+          "bbox": [
+            306.14,
+            182.82,
+            526.22,
+            369.95
+          ],
+          "start": 362,
+          "end": 1018
+        },
+        {
+          "block_number": 12,
+          "bbox": [
+            306.14,
+            384.64,
+            427.16,
+            395.55
+          ],
+          "start": 1020,
+          "end": 1043
+        },
+        {
+          "block_number": 14,
+          "bbox": [
+            305.8,
+            404.04,
+            526.22,
+            428.58
+          ],
+          "start": 1045,
+          "end": 1123
+        },
+        {
+          "block_number": 15,
+          "bbox": [
+            315.45,
+            438.75,
+            424.44,
+            463.21
+          ],
+          "start": 1125,
+          "end": 1168
+        },
+        {
+          "block_number": 16,
+          "bbox": [
+            315.27,
+            473.88,
+            516.92,
+            498.61
+          ],
+          "start": 1170,
+          "end": 1252
+        },
+        {
+          "block_number": 25,
+          "bbox": [
+            315.45,
+            505.23,
+            516.92,
+            610.99
+          ],
+          "start": 1254,
+          "end": 1610
+        }
+      ],
+      "short_fragment": false,
+      "parent_chunk_id": "2610.19398v1:b58c4636f096:clean2:p11:g2:c1"
+    },
+    "E5": {
+      "chunk_id": "2610.19398v1:b58c4636f096:clean2:p4:g2:c1:v1",
+      "arxiv_id": "2610.19398v1",
+      "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+      "pdf_path": "data/pdfs/2610.19398v1.pdf",
+      "pdf_sha256": "bbd29e710cda3569416d44e0a863a90d587f198640a9d84312e31ef586ff0df7",
+      "source_url": "https://arxiv.org/abs/2610.19398v1",
+      "page_number": 4,
+      "group_number": 2,
+      "char_start": 0,
+      "char_end": 1399,
+      "text": "3.3 Cross-Evidence Compositional Reasoning\n\nCross-Evidence Compositional Reasoning applies reconstructed relations to derive an answer from the selected passages. The generator receives the reasoning context\n\nXq = (S, z). (8)\n\nThe selected passages S provide factual premises, and z supplies the cross-evidence inferences used to connect them. The generator conditions its answer on both\n\npθ(z, J, a|xs) = pθ(z, J |xs) pθ(a|q, S, z). (9)\n\nHere S is determined by AT and J.\n\nThe answer generator Gθ uses z to determine how the premises in S can be combined. Entity correspondences identify which facts concern the same entity, allowing a relation established in one passage to supply a premise for another. The generator checks these correspondences against the selected text and composes the resulting relations to answer q. During composition, each property remains associated with the entity described in its source passage, and the direction of each relation is preserved. The resulting prediction is\n\nˆa = Gθ(q, S, z). (10)\n\nThe following prompt specifies how the generator applies these inferences.\n\nCross-Evidence Compositional Reasoning Prompt\n\nDetermine the target relation from the question. Use the cross-evidence analysis to connect facts across the selected passages. Check entity correspondences and relation direction against the passages before deriving the answer.\n\nDetailed settings",
+      "sources": [
+        {
+          "block_number": 1,
+          "bbox": [
+            306.14,
+            73.45,
+            524.41,
+            84.36
+          ],
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_number": 5,
+          "bbox": [
+            306.14,
+            91.03,
+            524.41,
+            142.58
+          ],
+          "start": 44,
+          "end": 207
+        },
+        {
+          "block_number": 8,
+          "bbox": [
+            387.52,
+            150.99,
+            525.15,
+            163.68
+          ],
+          "start": 209,
+          "end": 225
+        },
+        {
+          "block_number": 10,
+          "bbox": [
+            305.8,
+            170.84,
+            525.77,
+            222.65
+          ],
+          "start": 227,
+          "end": 387
+        },
+        {
+          "block_number": 11,
+          "bbox": [
+            314.25,
+            231.05,
+            525.15,
+            243.24
+          ],
+          "start": 389,
+          "end": 437
+        },
+        {
+          "block_number": 12,
+          "bbox": [
+            306.14,
+            250.9,
+            461.38,
+            263.75
+          ],
+          "start": 439,
+          "end": 472
+        },
+        {
+          "block_number": 16,
+          "bbox": [
+            306.14,
+            264.31,
+            524.79,
+            411.1
+          ],
+          "start": 474,
+          "end": 1003
+        },
+        {
+          "block_number": 17,
+          "bbox": [
+            380.17,
+            419.51,
+            525.15,
+            431.69
+          ],
+          "start": 1005,
+          "end": 1027
+        },
+        {
+          "block_number": 19,
+          "bbox": [
+            305.8,
+            439.58,
+            524.59,
+            464.07
+          ],
+          "start": 1029,
+          "end": 1103
+        },
+        {
+          "block_number": 21,
+          "bbox": [
+            314.36,
+            474.65,
+            457.49,
+            499.11
+          ],
+          "start": 1105,
+          "end": 1150
+        },
+        {
+          "block_number": 22,
+          "bbox": [
+            314.36,
+            506.96,
+            518.1,
+            572.07
+          ],
+          "start": 1152,
+          "end": 1380
+        },
+        {
+          "block_number": 23,
+          "bbox": [
+            317.05,
+            586.0,
+            517.17,
+            596.91
+          ],
+          "start": 1382,
+          "end": 1427
+        }
+      ],
+      "short_fragment": false,
+      "parent_chunk_id": "2610.19398v1:b58c4636f096:clean2:p4:g2:c1"
+    },
+    "E6": {
+      "chunk_id": "2610.19398v1:b58c4636f096:clean2:p3:g1:c1:v1",
+      "arxiv_id": "2610.19398v1",
+      "title": "RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation",
+      "pdf_path": "data/pdfs/2610.19398v1.pdf",
+      "pdf_sha256": "bbd29e710cda3569416d44e0a863a90d587f198640a9d84312e31ef586ff0df7",
+      "source_url": "https://arxiv.org/abs/2610.19398v1",
+      "page_number": 3,
+      "group_number": 1,
+      "char_start": 0,
+      "char_end": 454,
+      "text": "Figure 2: Overview of RCER. Inter-Round Relational Evidence Acquisition reconstructs relations among accumulated retrieved passages to refine information needs and guide further retrieval. Reasoning Context Reconstruction jointly selects complementary passages and derives cross-evidence inferences from the final candidate passage pool. Cross-Evidence Compositional Reasoning integrates these inferences with the selected passages for answer derivation.",
+      "sources": [
+        {
+          "block_number": 1,
+          "bbox": [
+            70.87,
+            314.7,
+            524.41,
+            372.65
+          ],
+          "start": 0,
+          "end": 454
+        }
+      ],
+      "short_fragment": false,
+      "parent_chunk_id": "2610.19398v1:b58c4636f096:clean2:p3:g1:c1"
+    }
+  },
+  "agent": {
+    "mode": "live",
+    "stop_reason": "sufficient",
+    "model_calls": 4,
+    "retrieval_rounds": 3,
+    "limits": {
+      "retrieval_rounds": 3,
+      "model_calls": 4,
+      "decision_output_tokens": 1600,
+      "answer_output_tokens": 4096,
+      "payload_chars": 70000,
+      "visible_candidates": 32,
+      "answer_evidence": 6,
+      "api_timeout_seconds": 120,
+      "automatic_retries": 0
+    },
+    "usage": {
+      "known_total_tokens": 26992,
+      "unknown_usage_calls": 0,
+      "complete": true
+    },
+    "run": "data/rag/agent_runs/20261020_084535_270471_agent"
+  },
+  "agent_trace": [
+    {
+      "kind": "retrieval",
+      "round": 1,
+      "tool": "search_dense",
+      "query": "RCER 如何重构不同证据之间的关系，并利用这些关系进行迭代检索？请根据论文说明主要步骤，并给出对应证据。",
+      "candidate_count": 20,
+      "new_count": 20,
+      "sources": [
+        {
+          "id": "C1",
+          "paper": "2610.19398v1",
+          "page": 14
+        },
+        {
+          "id": "C2",
+          "paper": "2610.19398v1",
+          "page": 8
+        },
+        {
+          "id": "C3",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C4",
+          "paper": "2610.19398v1",
+          "page": 3
+        },
+        {
+          "id": "C5",
+          "paper": "2610.19398v1",
+          "page": 4
+        },
+        {
+          "id": "C6",
+          "paper": "2610.19398v1",
+          "page": 7
+        },
+        {
+          "id": "C7",
+          "paper": "2610.19398v1",
+          "page": 3
+        },
+        {
+          "id": "C8",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C9",
+          "paper": "2610.19398v1",
+          "page": 5
+        },
+        {
+          "id": "C10",
+          "paper": "2610.19398v1",
+          "page": 6
+        },
+        {
+          "id": "C11",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C12",
+          "paper": "2610.19398v1",
+          "page": 11
+        },
+        {
+          "id": "C13",
+          "paper": "2610.19398v1",
+          "page": 13
+        },
+        {
+          "id": "C14",
+          "paper": "2610.19398v1",
+          "page": 13
+        },
+        {
+          "id": "C15",
+          "paper": "2610.19398v1",
+          "page": 5
+        },
+        {
+          "id": "C16",
+          "paper": "2610.19398v1",
+          "page": 11
+        },
+        {
+          "id": "C17",
+          "paper": "2610.19398v1",
+          "page": 7
+        },
+        {
+          "id": "C18",
+          "paper": "2610.19398v1",
+          "page": 8
+        },
+        {
+          "id": "C19",
+          "paper": "2610.19398v1",
+          "page": 8
+        },
+        {
+          "id": "C20",
+          "paper": "2610.19398v1",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 1,
+      "assessment": "partial",
+      "missing": [
+        "三项组件的具体输入输出与轮次流程细节",
+        "关系重构的具体操作（实体对应、关系依赖如何判定）",
+        "迭代检索的停止/更新规则在方法节的完整描述"
+      ],
+      "selected_ids": [
+        "C7",
+        "C3",
+        "C16",
+        "C4",
+        "C17",
+        "C8"
+      ],
+      "action": "search_dense",
+      "query": "RCER inter-round relational evidence acquisition entity correspondence relation dependency problem decomposition iteration steps",
+      "reason": "已有摘要与总览图，需补方法节中实体对应与关系依赖判定的具体流程证据"
+    },
+    {
+      "kind": "retrieval",
+      "round": 2,
+      "tool": "search_dense",
+      "query": "RCER inter-round relational evidence acquisition entity correspondence relation dependency problem decomposition iteration steps",
+      "candidate_count": 12,
+      "new_count": 1,
+      "sources": [
+        {
+          "id": "C4",
+          "paper": "2610.19398v1",
+          "page": 3
+        },
+        {
+          "id": "C3",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C8",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C7",
+          "paper": "2610.19398v1",
+          "page": 3
+        },
+        {
+          "id": "C5",
+          "paper": "2610.19398v1",
+          "page": 4
+        },
+        {
+          "id": "C12",
+          "paper": "2610.19398v1",
+          "page": 11
+        },
+        {
+          "id": "C16",
+          "paper": "2610.19398v1",
+          "page": 11
+        },
+        {
+          "id": "C2",
+          "paper": "2610.19398v1",
+          "page": 8
+        },
+        {
+          "id": "C21",
+          "paper": "2610.19398v1",
+          "page": 6
+        },
+        {
+          "id": "C10",
+          "paper": "2610.19398v1",
+          "page": 6
+        },
+        {
+          "id": "C9",
+          "paper": "2610.19398v1",
+          "page": 5
+        },
+        {
+          "id": "C17",
+          "paper": "2610.19398v1",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 2,
+      "assessment": "partial",
+      "missing": [
+        "3.1节中控制器输入xt的完整定义与每轮关系重构的具体输出格式（实体对应、关系依赖如何改写信息需求）",
+        "3.2节推理上下文重构与3.3节组合推理的具体步骤细节"
+      ],
+      "selected_ids": [
+        "C12",
+        "C16",
+        "C4",
+        "C7",
+        "C8",
+        "C17"
+      ],
+      "action": "search_dense",
+      "query": "controller input x_t relation reconstruction next information need reformulate subquestion entity correspondence output format section 3.1",
+      "reason": "已获轮次流程与输入清单，但缺3.1节每轮关系判定如何产出并改写信息需求的具体细节，补查方法节"
+    },
+    {
+      "kind": "retrieval",
+      "round": 3,
+      "tool": "search_dense",
+      "query": "controller input x_t relation reconstruction next information need reformulate subquestion entity correspondence output format section 3.1",
+      "candidate_count": 12,
+      "new_count": 6,
+      "sources": [
+        {
+          "id": "C22",
+          "paper": "2610.19398v1",
+          "page": 11
+        },
+        {
+          "id": "C16",
+          "paper": "2610.19398v1",
+          "page": 11
+        },
+        {
+          "id": "C5",
+          "paper": "2610.19398v1",
+          "page": 4
+        },
+        {
+          "id": "C8",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C21",
+          "paper": "2610.19398v1",
+          "page": 6
+        },
+        {
+          "id": "C23",
+          "paper": "2610.19398v1",
+          "page": 3
+        },
+        {
+          "id": "C4",
+          "paper": "2610.19398v1",
+          "page": 3
+        },
+        {
+          "id": "C24",
+          "paper": "2610.19398v1",
+          "page": 4
+        },
+        {
+          "id": "C17",
+          "paper": "2610.19398v1",
+          "page": 7
+        },
+        {
+          "id": "C25",
+          "paper": "2610.19398v1",
+          "page": 1
+        },
+        {
+          "id": "C26",
+          "paper": "2610.19398v1",
+          "page": 4
+        },
+        {
+          "id": "C27",
+          "paper": "2610.19398v1",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 3,
+      "assessment": "sufficient",
+      "missing": [],
+      "selected_ids": [
+        "C23",
+        "C22",
+        "C24",
+        "C16",
+        "C26",
+        "C7"
+      ],
+      "action": "finish",
+      "query": "",
+      "reason": "已覆盖关系重构的输入输出、动态分解与查询生成、迭代更新与终止条件，以及后续选择与组合推理步骤。"
+    },
+    {
+      "kind": "stop",
+      "reason": "sufficient"
+    }
+  ]
+}

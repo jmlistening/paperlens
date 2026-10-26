@@ -1,0 +1,354 @@
+{
+  "n_answered_or_partial": 56,
+  "cited_parent_precision": [
+    0.6292,
+    56
+  ],
+  "cited_evidence_gold_quote_precision": [
+    0.6292,
+    56
+  ],
+  "citation_occurrence_gold_quote_precision": [
+    0.6809,
+    56
+  ],
+  "note": "Deterministic citation precision: a cited parent is correct if it is in gold_parent_ids; a cited evidence is correct if it contains at least one gold-point quote. No judge.",
+  "records": [
+    {
+      "question_id": "q001",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q002",
+      "cited_parent_precision": 0.6666666666666666,
+      "cited_evidence_gold_quote_precision": 0.6666666666666666,
+      "citation_occurrence_gold_quote_precision": 0.75
+    },
+    {
+      "question_id": "q004",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.6666666666666666
+    },
+    {
+      "question_id": "q010",
+      "cited_parent_precision": 0.6666666666666666,
+      "cited_evidence_gold_quote_precision": 0.6666666666666666,
+      "citation_occurrence_gold_quote_precision": 0.4
+    },
+    {
+      "question_id": "q011",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q012",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q013",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q014",
+      "cited_parent_precision": 0.0,
+      "cited_evidence_gold_quote_precision": 0.0,
+      "citation_occurrence_gold_quote_precision": 0.0
+    },
+    {
+      "question_id": "q015",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q016",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.6
+    },
+    {
+      "question_id": "q017",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q018",
+      "cited_parent_precision": 0.3333333333333333,
+      "cited_evidence_gold_quote_precision": 0.3333333333333333,
+      "citation_occurrence_gold_quote_precision": 0.36363636363636365
+    },
+    {
+      "question_id": "q019",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q020",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.75
+    },
+    {
+      "question_id": "q021",
+      "cited_parent_precision": 0.6666666666666666,
+      "cited_evidence_gold_quote_precision": 0.6666666666666666,
+      "citation_occurrence_gold_quote_precision": 0.6666666666666666
+    },
+    {
+      "question_id": "q023",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q025",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q027",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.6666666666666666
+    },
+    {
+      "question_id": "q028",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.7142857142857143
+    },
+    {
+      "question_id": "q029",
+      "cited_parent_precision": 0.25,
+      "cited_evidence_gold_quote_precision": 0.25,
+      "citation_occurrence_gold_quote_precision": 0.2
+    },
+    {
+      "question_id": "q030",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.8
+    },
+    {
+      "question_id": "q032",
+      "cited_parent_precision": 0.6666666666666666,
+      "cited_evidence_gold_quote_precision": 0.6666666666666666,
+      "citation_occurrence_gold_quote_precision": 0.8571428571428571
+    },
+    {
+      "question_id": "q033",
+      "cited_parent_precision": 0.0,
+      "cited_evidence_gold_quote_precision": 0.0,
+      "citation_occurrence_gold_quote_precision": 0.0
+    },
+    {
+      "question_id": "q035",
+      "cited_parent_precision": 0.3333333333333333,
+      "cited_evidence_gold_quote_precision": 0.3333333333333333,
+      "citation_occurrence_gold_quote_precision": 0.2
+    },
+    {
+      "question_id": "q036",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q037",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q038",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q040",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.75
+    },
+    {
+      "question_id": "q101",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.6666666666666666
+    },
+    {
+      "question_id": "q102",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.75
+    },
+    {
+      "question_id": "q103",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.8
+    },
+    {
+      "question_id": "q104",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.5555555555555556
+    },
+    {
+      "question_id": "q105",
+      "cited_parent_precision": 0.3333333333333333,
+      "cited_evidence_gold_quote_precision": 0.3333333333333333,
+      "citation_occurrence_gold_quote_precision": 0.6666666666666666
+    },
+    {
+      "question_id": "q106",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q107",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q109",
+      "cited_parent_precision": 0.0,
+      "cited_evidence_gold_quote_precision": 0.0,
+      "citation_occurrence_gold_quote_precision": 0.0
+    },
+    {
+      "question_id": "q110",
+      "cited_parent_precision": 0.0,
+      "cited_evidence_gold_quote_precision": 0.0,
+      "citation_occurrence_gold_quote_precision": 0.0
+    },
+    {
+      "question_id": "q111",
+      "cited_parent_precision": 0.25,
+      "cited_evidence_gold_quote_precision": 0.25,
+      "citation_occurrence_gold_quote_precision": 0.4444444444444444
+    },
+    {
+      "question_id": "q112",
+      "cited_parent_precision": 0.0,
+      "cited_evidence_gold_quote_precision": 0.0,
+      "citation_occurrence_gold_quote_precision": 0.0
+    },
+    {
+      "question_id": "q113",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q114",
+      "cited_parent_precision": 0.4,
+      "cited_evidence_gold_quote_precision": 0.4,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q115",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.6666666666666666
+    },
+    {
+      "question_id": "q116",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q117",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q118",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q119",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q121",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q122",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q123",
+      "cited_parent_precision": 0.5,
+      "cited_evidence_gold_quote_precision": 0.5,
+      "citation_occurrence_gold_quote_precision": 0.4444444444444444
+    },
+    {
+      "question_id": "q124",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q125",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q126",
+      "cited_parent_precision": 0.3333333333333333,
+      "cited_evidence_gold_quote_precision": 0.3333333333333333,
+      "citation_occurrence_gold_quote_precision": 0.5
+    },
+    {
+      "question_id": "q127",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q128",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    },
+    {
+      "question_id": "q129",
+      "cited_parent_precision": 0.3333333333333333,
+      "cited_evidence_gold_quote_precision": 0.3333333333333333,
+      "citation_occurrence_gold_quote_precision": 0.25
+    },
+    {
+      "question_id": "q130",
+      "cited_parent_precision": 1.0,
+      "cited_evidence_gold_quote_precision": 1.0,
+      "citation_occurrence_gold_quote_precision": 1.0
+    }
+  ]
+}

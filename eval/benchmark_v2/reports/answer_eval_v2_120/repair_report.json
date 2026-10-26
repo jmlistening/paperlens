@@ -1,0 +1,359 @@
+{
+  "version": "answer_repair_v1",
+  "generated_by": "eval/answer_repair.py",
+  "created_at": "2026-10-25T05:09:25+00:00",
+  "dry_run": false,
+  "eval_dir": "eval\\benchmark_v2\\runs\\answer_eval120",
+  "benchmark_dir": "eval\\benchmark_v2\\eval120",
+  "out_dir": "eval\\benchmark_v2\\runs\\answer_eval120",
+  "answer_model": "deepseek-flash",
+  "max_tokens": 8192,
+  "requested_ids": null,
+  "selected_ids": [
+    "q005",
+    "q007",
+    "q009",
+    "q018",
+    "q101",
+    "q108",
+    "q114",
+    "q127"
+  ],
+  "repaired": [
+    {
+      "question_id": "q018",
+      "answer_status": "answered",
+      "previous_error": "引用原句长度无效。",
+      "attempt": 2,
+      "tokens_before": 3247,
+      "tokens_after": 7208,
+      "latency_ms_before": 3078.37,
+      "latency_ms_after": 5454.075
+    },
+    {
+      "question_id": "q101",
+      "answer_status": "answered",
+      "previous_error": "invalid JSON: Expecting property name enclosed in double quotes",
+      "attempt": 2,
+      "tokens_before": 2905,
+      "tokens_after": 6640,
+      "latency_ms_before": 3360.37,
+      "latency_ms_after": 6162.182
+    },
+    {
+      "question_id": "q114",
+      "answer_status": "answered",
+      "previous_error": "E2 的引文不在原文中，回答未通过校验。",
+      "attempt": 2,
+      "tokens_before": 3409,
+      "tokens_after": 7509,
+      "latency_ms_before": 2860.137,
+      "latency_ms_after": 5371.465
+    },
+    {
+      "question_id": "q127",
+      "answer_status": "partial",
+      "previous_error": "引用原句长度无效。",
+      "attempt": 2,
+      "tokens_before": 2529,
+      "tokens_after": 5544,
+      "latency_ms_before": 2474.009,
+      "latency_ms_after": 4375.081
+    }
+  ],
+  "skipped": [
+    {
+      "question_id": "q005",
+      "reason": "no usable evidence: no evidence recorded in checkpoint"
+    },
+    {
+      "question_id": "q007",
+      "reason": "no usable evidence: no evidence recorded in checkpoint"
+    }
+  ],
+  "still_invalid": [
+    {
+      "question_id": "q009",
+      "reason": "E2 的引文不在原文中，回答未通过校验。",
+      "original_error": "APIConnectionError: Connection error.",
+      "answer_status": "invalid"
+    },
+    {
+      "question_id": "q108",
+      "reason": "E2 的引文不在原文中，回答未通过校验。",
+      "original_error": "E2 的引文不在原文中，回答未通过校验。",
+      "answer_status": "invalid"
+    }
+  ],
+  "already_valid": [
+    {
+      "question_id": "q001",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q002",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q004",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q010",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q011",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q012",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q013",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q014",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q015",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q016",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q017",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q019",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q020",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q021",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q023",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q025",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q027",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q028",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q029",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q030",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q032",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q033",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q035",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q036",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q037",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q038",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q040",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q102",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q103",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q104",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q105",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q106",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q107",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q109",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q110",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q111",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q112",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q113",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q115",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q116",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q117",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q118",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q119",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q121",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q122",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q123",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q124",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q125",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q126",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q128",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q129",
+      "answer_status": "answered",
+      "reason": "already valid; not repaired"
+    },
+    {
+      "question_id": "q130",
+      "answer_status": "partial",
+      "reason": "already valid; not repaired"
+    }
+  ],
+  "would_repair": [],
+  "counts": {
+    "selected": 8,
+    "repaired": 4,
+    "skipped": 2,
+    "still_invalid": 2,
+    "already_valid": 52,
+    "would_repair": 0
+  }
+}

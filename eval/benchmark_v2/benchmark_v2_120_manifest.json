@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "created_at": "2026-10-25T04:06:12.614008+00:00",
+  "freeze_id": "4aeeb49ba6376a81688874ddc9e07dffbb86b4bd618483a5f31ba163c7503528",
+  "manifest_hash": "4aeeb49ba6376a81688874ddc9e07dffbb86b4bd618483a5f31ba163c7503528",
+  "questions_sha256": "b37ea872ef48cc05ba980f8c6517efd6c285624eb78dd765a1d8976ce5cb1d08",
+  "qrels_sha256": "c78358326cbc91c2e45ac4c99c4665cc725eca7dd6d94a5965536c9341c3131d",
+  "artifacts": {
+    "questions": {
+      "path": "eval\\benchmark_v2\\questions.v2.jsonl",
+      "sha256": "b37ea872ef48cc05ba980f8c6517efd6c285624eb78dd765a1d8976ce5cb1d08",
+      "kind": "file",
+      "size_bytes": 109786,
+      "count": 60,
+      "question_ids": [
+        "q001",
+        "q002",
+        "q004",
+        "q005",
+        "q007",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021",
+        "q023",
+        "q025",
+        "q027",
+        "q028",
+        "q029",
+        "q030",
+        "q032",
+        "q033",
+        "q035",
+        "q036",
+        "q037",
+        "q038",
+        "q040",
+        "q101",
+        "q102",
+        "q103",
+        "q104",
+        "q105",
+        "q106",
+        "q107",
+        "q108",
+        "q109",
+        "q110",
+        "q111",
+        "q112",
+        "q113",
+        "q114",
+        "q115",
+        "q116",
+        "q117",
+        "q118",
+        "q119",
+        "q121",
+        "q122",
+        "q123",
+        "q124",
+        "q125",
+        "q126",
+        "q127",
+        "q128",
+        "q129",
+        "q130"
+      ],
+      "types": {
+        "factual": 9,
+        "mechanism": 28,
+        "multi_hop": 4,
+        "numeric": 19
+      },
+      "answerability": {
+        "answerable": 60
+      },
+      "review_status": {
+        "approved": 60
+      },
+      "gold_point_count": 145
+    },
+    "qrels": {
+      "path": "eval\\benchmark_v2\\qrels.v2.120.jsonl",
+      "sha256": "c78358326cbc91c2e45ac4c99c4665cc725eca7dd6d94a5965536c9341c3131d",
+      "kind": "file",
+      "size_bytes": 9740,
+      "count": 60,
+      "with_gold": 60,
+      "without_gold": 0,
+      "gold_parent_id_count": 83,
+      "answerability": {
+        "answerable": 60
+      }
+    },
+    "splits": {
+      "path": "eval\\benchmark_v2\\splits_120.json",
+      "sha256": "a1ae4fef0cc522c83e715d4d45811ae2d868df25c695cda25f1eb3ee7c46c845",
+      "kind": "file",
+      "size_bytes": 351096
+    },
+    "index_manifest": {
+      "path": "eval\\benchmark_v2\\index120_manifest.json",
+      "sha256": "8a4d7cf12fc642faff5d18d933b2fe897d3c38c626f9e720d446f62fd01da48b",
+      "kind": "file",
+      "size_bytes": 53411
+    },
+    "review_v2": {
+      "path": "eval\\benchmark_v2\\review_v2.json",
+      "sha256": "b30b84bbf96cccc5b07c98083149eedc008b04659217d6d104a46e7763d6ef6d",
+      "kind": "file",
+      "size_bytes": 620
+    }
+  }
+}

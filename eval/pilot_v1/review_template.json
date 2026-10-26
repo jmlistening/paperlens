@@ -1,0 +1,491 @@
+{
+  "instructions": "复制后人工填写；null 表示未评，空列表初始值不代表已确认没有问题。不要修改原始模型输出。",
+  "rows": [
+    {
+      "case_id": "Q01",
+      "mode": "fixed",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q01.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q01.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q01.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q01",
+      "mode": "agent_one",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q01.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q01.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q01.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q01",
+      "mode": "agent_multi",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q01.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q01.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q01.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q02",
+      "mode": "fixed",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q02.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q02.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q02.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q02",
+      "mode": "agent_one",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q02.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q02.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q02.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q02",
+      "mode": "agent_multi",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q02.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q02.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q02.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q03",
+      "mode": "fixed",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q03.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q03.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q03.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q03",
+      "mode": "agent_one",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q03.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q03.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q03.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q03",
+      "mode": "agent_multi",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q03.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q03.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q03.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q04",
+      "mode": "fixed",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q04.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q04.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q04.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q04",
+      "mode": "agent_one",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q04.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q04.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q04.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q04",
+      "mode": "agent_multi",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q04.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q04.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q04.3",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q05",
+      "mode": "fixed",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q05.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.3",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.4",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q05",
+      "mode": "agent_one",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q05.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.3",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.4",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q05",
+      "mode": "agent_multi",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q05.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.2",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.3",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q05.4",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q06",
+      "mode": "fixed",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q06.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q06.2",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q06",
+      "mode": "agent_one",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q06.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q06.2",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    },
+    {
+      "case_id": "Q06",
+      "mode": "agent_multi",
+      "reviewer": null,
+      "reviewed_at": null,
+      "criteria": [
+        {
+          "id": "Q06.1",
+          "rating": null,
+          "explanation": null
+        },
+        {
+          "id": "Q06.2",
+          "rating": null,
+          "explanation": null
+        }
+      ],
+      "point_citation_support": [],
+      "unsupported_or_incorrect_claims": [],
+      "overall_pass": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "question_id": "q002",
+  "system": "agent_multi",
+  "status": "ok",
+  "answer_status": "answered",
+  "answer_source": "model",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": "deepseek-flash",
+  "raw_response": "{\"status\":\"answered\",\"points\":[{\"text\":\"refusal_correctness 的跨模型极差最大，为 0.478–0.870，约 39 个百分点（0–1 量表）。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"The largest cross-provider spread sits in refusal_correctness (0.478–0.870, a 39-point gap on a 0–1 scale)\"}]},{\"text\":\"section_coverage 的极差为 0.636–0.955，约 32 个百分点。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"section_coverage (0.636–0.955, a 32-point gap)\"}]},{\"text\":\"factual_accuracy 的极差为 4.745–5.000，在 1–5 量表上仅 0.255 分。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"factual_accuracy (4.745–5.000, a 0.255-point gap on a 1–5 scale)\"}]},{\"text\":\"completeness 的极差为 4.571–4.980，仅 0.409 分。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"completeness (4.571–4.980, a 0.409-point gap)\"}]},{\"text\":\"作者总体判断：citation-grounding 类指标有区分度，而 LLM evaluator 指标基本饱和。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"The citation-grounding metrics discriminate; the evaluator metrics largely saturate.\"}]},{\"text\":\"作者解读为：当前模型在所问的事实性论断上普遍正确，但在选择引用哪些证据、证据是否可验证上差异显著，这正是引用指标旨在暴露的区别。\",\"citations\":[{\"id\":\"E2\",\"quote\":\"current-generation models are uniformly correct on the kinds of factual claims the dataset asks about, but they vary substantially in which evidence they choose to cite and whether that evidence is verifiable\"},{\"id\":\"E2\",\"quote\":\"exactly the distinction the citation metrics were designed to expose\"}]}],\"limitations\":[\"证据仅覆盖 Results 中的指标极差与作者解读片段，未提供这些差异的进一步统计分析或全部讨论内容。\"]}",
+  "usage": {
+    "completion_tokens": 485,
+    "prompt_tokens": 1584,
+    "total_tokens": 2069,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 1408,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 176
+  },
+  "tokens": 8300,
+  "latency_ms": 3782.083,
+  "answer_latency_ms": 2503.012,
+  "retrieval_latency_ms": 253.987,
+  "tool_calls": 1,
+  "retrieval_rounds": 1,
+  "stop_reason": "sufficient",
+  "retrieved_parent_ids": [
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2",
+    "2607.11074v1:16754d9cb8c4:clean2:p9:g1:c1"
+  ],
+  "selected_evidence_ids": [
+    "C4",
+    "C1",
+    "C10"
+  ],
+  "candidate_ids": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20"
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 6
+    },
+    {
+      "id": "E2",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 6
+    },
+    {
+      "id": "E3",
+      "parent_chunk_id": "2607.11074v1:16754d9cb8c4:clean2:p9:g1:c1",
+      "title": "ResearchQA: Benchmarking Citation-Grounded Question-Answering on Scientific Papers",
+      "page_number": 9
+    }
+  ],
+  "cited_evidence_ids": [
+    "E1",
+    "E2"
+  ],
+  "cited_parent_ids": [
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2"
+  ],
+  "gold_parent_ids": [
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c1",
+    "2607.11074v1:16754d9cb8c4:clean2:p6:g1:c2"
+  ],
+  "gold_point_count": 3,
+  "metrics": {
+    "schema_success": 1.0,
+    "quote_integrity": 1.0,
+    "cited_gold_parent_recall": 1.0,
+    "gold_point_citation_recall": 1.0
+  },
+  "trace": [
+    {
+      "kind": "retrieval",
+      "round": 1,
+      "tool": "search_dense",
+      "query": "在 Results 部分，作者指出 citation-grounding 指标与 LLM evaluator 指标在区分模型能力上表现不同。请结合表 1 的具体数值范围，说明 refusal_correctness、section_coverage、factual_accuracy 和 completeness 四个指标各自的跨模型极差（gap），并解释作者如何解读这种差异。",
+      "candidate_count": 20,
+      "new_count": 20,
+      "sources": [
+        {
+          "id": "C1",
+          "paper": "2607.11074v1",
+          "page": 6
+        },
+        {
+          "id": "C2",
+          "paper": "2607.06618v2",
+          "page": 7
+        },
+        {
+          "id": "C3",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C4",
+          "paper": "2607.11074v1",
+          "page": 6
+        },
+        {
+          "id": "C5",
+          "paper": "2607.07302v1",
+          "page": 2
+        },
+        {
+          "id": "C6",
+          "paper": "2607.04610v1",
+          "page": 1
+        },
+        {
+          "id": "C7",
+          "paper": "2607.11933v1",
+          "page": 3
+        },
+        {
+          "id": "C8",
+          "paper": "2608.01565v1",
+          "page": 8
+        },
+        {
+          "id": "C9",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C10",
+          "paper": "2607.11074v1",
+          "page": 9
+        },
+        {
+          "id": "C11",
+          "paper": "2512.00991v1",
+          "page": 8
+        },
+        {
+          "id": "C12",
+          "paper": "2610.26339v1",
+          "page": 3
+        },
+        {
+          "id": "C13",
+          "paper": "2607.10463v1",
+          "page": 7
+        },
+        {
+          "id": "C14",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C15",
+          "paper": "2412.15404v1",
+          "page": 3
+        },
+        {
+          "id": "C16",
+          "paper": "2607.03028v1",
+          "page": 7
+        },
+        {
+          "id": "C17",
+          "paper": "2607.04610v1",
+          "page": 11
+        },
+        {
+          "id": "C18",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C19",
+          "paper": "2607.19238v1",
+          "page": 9
+        },
+        {
+          "id": "C20",
+          "paper": "2607.17598v1",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 1,
+      "assessment": "sufficient",
+      "selected_ids": [
+        "C4",
+        "C1",
+        "C10"
+      ],
+      "action": "finish",
+      "query": "",
+      "missing": [],
+      "reason": "C4含表1原始数值及四指标极差表述，C1与C10补充作者对citation-grounding与LLM evaluator指标差异的解读。"
+    }
+  ],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:04:04+00:00",
+  "run_signature": "19d4871dac31de130561733ed2477e89232aae8e7a6e35cf684118b6c10edd04"
+}

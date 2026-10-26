@@ -1,0 +1,5 @@
+# Push-only runtime for a headless scheduler / small VPS.
+# The full Streamlit UI and RAG stack are in requirements.txt.
+arxiv==4.0.1
+openai==3.31.0
+python-dotenv==1.2.4

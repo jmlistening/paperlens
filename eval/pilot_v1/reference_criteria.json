@@ -1,0 +1,243 @@
+{
+  "version": "paperlens_pilot_v1_20261021",
+  "page_numbering": "PDF 物理页，从 1 开始",
+  "normalization": "引用只合并空白；不改写拼写或断词",
+  "gold_visibility": "仅人工核对；不得放入模型请求或检索语料",
+  "cases": [
+    {
+      "case_id": "Q01",
+      "criteria": [
+        {
+          "id": "Q01.1",
+          "requirement": "GPU 是 NVIDIA A100 80GB。",
+          "anchors": [
+            {
+              "pdf_page": 2,
+              "quote": "The benchmarks are conducted on NVIDIA A100 (80GB) instances across two model fam- ilies (Llama-3.1 8B, Qwen-2 7B) using bfloat16 precision to account for architectural variability in attention implementation."
+            }
+          ]
+        },
+        {
+          "id": "Q01.2",
+          "requirement": "模型为 Llama-3.1 8B 和 Qwen-2 7B，精度为 bfloat16。",
+          "anchors": [
+            {
+              "pdf_page": 2,
+              "quote": "The benchmarks are conducted on NVIDIA A100 (80GB) instances across two model fam- ilies (Llama-3.1 8B, Qwen-2 7B) using bfloat16 precision to account for architectural variability in attention implementation."
+            }
+          ]
+        },
+        {
+          "id": "Q01.3",
+          "requirement": "隔离 prefill 时生成长度设为恰好 1 token；各配置之前进行 warm-up，使 GPU 时钟速度及功率状态稳定。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "In both cases, we isolate the prefill phase by setting the generation length to exactly 1 token. Each configuration is preceded by a warm-up pass to stabilise GPU clock speeds and power states."
+            }
+          ]
+        }
+      ],
+      "review_notes": ""
+    },
+    {
+      "case_id": "Q02",
+      "criteria": [
+        {
+          "id": "Q02.1",
+          "requirement": "构造器对每个知识源单独读取可见内容 v(x)，不看问题 q、标准答案 Aq 或其他知识源；抽取结果可跨问题复用。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "Construction is question- blind: πθ processes each x ∈Xq independently from v(x) alone, without access to q, Aq, or the other sources, and yields Gθ(Xq) via Eqs. (1)–(2), so its extractions can be reused across questions."
+            }
+          ]
+        },
+        {
+          "id": "Q02.2",
+          "requirement": "来源元数据和原始内容引用等额外信息由环境维护，不显示给构造器。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "Additional source information µx, such as prove- nance metadata and references to the original con- tent, is maintained by the environment and is never shown to πθ."
+            }
+          ]
+        },
+        {
+          "id": "Q02.3",
+          "requirement": "仅训练/更新构造器；解析器、组装器固定，实体链接、检索与预算内证据打包等环境组件也固定。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "Two fixed, non-trainable modules then process the extractions: the parser P parses each yx, and the assembler B uses the parsed results and µx to assign graph identifiers, attach prove- nance, link entities across sources, and assemble the graph as:"
+            },
+            {
+              "pdf_page": 4,
+              "quote": "We use a shared, fixed environment to perform entity linking, graph assembly, retrieval, and budgeted evidence packing for all candidates. Throughout training, only the constructor is updated, while all other components remain fixed."
+            }
+          ]
+        }
+      ],
+      "review_notes": ""
+    },
+    {
+      "case_id": "Q03",
+      "criteria": [
+        {
+          "id": "Q03.1",
+          "requirement": "学生可能只提供题号；短且数字化的引用不利于向量检索，题号缩写变化使关键词检索困难。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "Embedding-based methods struggle due to the short and numeric nature of these references, while keyword-based systems encounter difficulties due to variability of question number abbreviations (e.g., \"Project 2 Question 10\" and \"Fall 2022 Midterm 2 Question 10\")."
+            }
+          ]
+        },
+        {
+          "id": "Q03.2",
+          "requirement": "Llama 3 8B 生成标准化题号，再由规则算法从题库获取题目内容。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "To address these issues, we used the Llama 3 8B model to generate standardized question numbers from student posts."
+            },
+            {
+              "pdf_page": 3,
+              "quote": "The generated standardized question number enables us to accurately fetch the question content from a question bank using a rule-based algorithm."
+            }
+          ]
+        },
+        {
+          "id": "Q03.3",
+          "requirement": "相似度检索输入学生帖子及已抽取的题目，返回最相关的 top 10。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "In similarity search phase, we input both the student post and any extracted questions. We exclude past exams and Canvas quizzes from our search to avoid skewing results towards similar exam or quiz questions, which could prevent the retrieval of lecture materials. We retrieve the top 10 most relevant results."
+            }
+          ]
+        }
+      ],
+      "review_notes": ""
+    },
+    {
+      "case_id": "Q04",
+      "criteria": [
+        {
+          "id": "Q04.1",
+          "requirement": "限定约 112k token、Llama-3.1 8B，测量对象为 prefill；不能写成 PaperLens 的实测表现。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "As detailed in Table 1, at approximately 112,000 tokens, the vLLM engine processed the Llama-3.1 input in 3.54 seconds (1,005 Joules), while the baseline required 25.54 sec- onds (7,600 Joules). This represents a 7.6× improvement in energy efficiency for the optimised engine"
+            }
+          ]
+        },
+        {
+          "id": "Q04.2",
+          "requirement": "HF Baseline 延迟 25.54 s，能耗 7600.2 J（接受正文四舍五入 7600 J）；vLLM 延迟 3.54 s，能耗 1005.1 J（接受 1005 J）。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "Llama-3.1 8B HF Baseline 25.54 7,600.2 0.0678 vLLM (Paged) 3.54 1,005.1 0.0090"
+            }
+          ]
+        },
+        {
+          "id": "Q04.3",
+          "requirement": "该模型该配置报告约 7.6 倍能效提升；不能把 Qwen-2 的最高 8.9 倍移给 Llama。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "This represents a 7.6× improvement in energy efficiency for the optimised engine (reaching up to 8.9× for Qwen-2)."
+            }
+          ]
+        }
+      ],
+      "review_notes": "表格读取困难可用正文等价数值；不能因引用命中而忽略模型名、单位或行列对应错误。"
+    },
+    {
+      "case_id": "Q05",
+      "criteria": [
+        {
+          "id": "Q05.1",
+          "requirement": "Deducibility 检查检索证据是否足以支持正确答案，在候选图级计算。",
+          "anchors": [
+            {
+              "pdf_page": 3,
+              "quote": "(i) Deducibility Reward, which evaluates whether the retrieved evidence from a constructed MMKG is sufficient to support"
+            },
+            {
+              "pdf_page": 4,
+              "quote": "a correct answer;"
+            },
+            {
+              "pdf_page": 4,
+              "quote": "Evidence sufficiency depends on the question and on how extractions from different sources combine, so the Deducibility Reward is computed at the candidate-graph level."
+            }
+          ]
+        },
+        {
+          "id": "Q05.2",
+          "requirement": "Source-Grounded Quality 检查抽取知识是否忠实保留原始知识源的核心内容，在知识源抽取级计算。",
+          "anchors": [
+            {
+              "pdf_page": 4,
+              "quote": "(ii) Source-Grounded Quality Reward, which assesses whether the knowledge extracted by the constructor faithfully preserves the central content of its original knowledge source;"
+            },
+            {
+              "pdf_page": 4,
+              "quote": "Fidelity and usability are properties of each extraction re- gardless of the question, so the Source-Grounded Quality and Graph-Readiness Rewards are com- puted at the source-extraction level."
+            }
+          ]
+        },
+        {
+          "id": "Q05.3",
+          "requirement": "Graph-Readiness 检查输出是否结构有效并可用于构图，在知识源抽取级计算。",
+          "anchors": [
+            {
+              "pdf_page": 4,
+              "quote": "and (iii) Graph-Readiness Reward, which encour- ages structurally valid and usable outputs for graph construction."
+            },
+            {
+              "pdf_page": 4,
+              "quote": "Fidelity and usability are properties of each extraction re- gardless of the question, so the Source-Grounded Quality and Graph-Readiness Rewards are com- puted at the source-extraction level."
+            }
+          ]
+        },
+        {
+          "id": "Q05.4",
+          "requirement": "层级不同是因为证据充分性依赖问题及跨来源组合；忠实性和可用性是与问题无关的单次抽取属性。",
+          "anchors": [
+            {
+              "pdf_page": 4,
+              "quote": "Evidence sufficiency depends on the question and on how extractions from different sources combine, so the Deducibility Reward is computed at the candidate-graph level. Fidelity and usability are properties of each extraction re- gardless of the question, so the Source-Grounded Quality and Graph-Readiness Rewards are com- puted at the source-extraction level."
+            }
+          ]
+        }
+      ],
+      "review_notes": ""
+    },
+    {
+      "case_id": "Q06",
+      "criteria": [
+        {
+          "id": "Q06.1",
+          "requirement": "明确原文没有报告这一 RTX 4060 / PaperLens / 每月 1000 次问答的人民币电费，不提供伪造金额。",
+          "anchors": []
+        },
+        {
+          "id": "Q06.2",
+          "requirement": "若补充实验范围，应正确指出研究测量 A100 上特定模型和引擎的能耗；不能把这些实验直接换算成本题账单。",
+          "anchors": [
+            {
+              "pdf_page": 2,
+              "quote": "The benchmarks are conducted on NVIDIA A100 (80GB) instances across two model fam- ilies (Llama-3.1 8B, Qwen-2 7B) using bfloat16 precision to account for architectural variability in attention implementation."
+            }
+          ]
+        }
+      ],
+      "review_notes": "已核对该 PDF 全部 5 页；缺失信息不能靠单个引文证明。第一项必需；第二项为条件性核对：只明确拒绝且没有补充范围也算通过。不强求特定 status 枚举，按内容判断。不把答案拒绝一切问题当作正确策略。"
+    }
+  ]
+}

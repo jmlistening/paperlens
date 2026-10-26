@@ -1,0 +1,72 @@
+# PaperLens Eval-lite system matrix (Task E6).
+#
+# Retrieval-only systems are deterministic: they never call an LLM and their
+# only output is {"retrieved_parent_ids": [...]}.
+#
+# Answer systems (and the LLM rerank stage) are declared now but stubbed with
+# implemented: false. E6 never calls an LLM; those rows must be filled in by a
+# later task with an injected answer/rerank dependency.
+version: 1
+
+systems:
+  bm25_top6:
+    kind: retrieval
+    mode: bm25
+    top_k: 6
+    implemented: true
+
+  # Main comparison uses the same English query for BM25 and dense. The
+  # cross-lingual diagnostic below uses the Chinese question and must be
+  # reported separately, not mixed into the main table.
+  dense_top6:
+    kind: retrieval
+    mode: dense
+    query: query_en
+    top_k: 6
+    implemented: true
+
+  dense_zh_top6:
+    kind: retrieval
+    mode: dense
+    query: query_zh
+    top_k: 6
+    implemented: true
+
+  hybrid_rrf_top6:
+    kind: retrieval
+    mode: hybrid
+    query: query_en
+    top_k: 6
+    pool: 50
+    rrf_k: 60
+    implemented: true
+
+  # hybrid top-20 -> LLM rerank -> grade >= 2 -> top-6. Needs a model, so it is
+  # a declared stub rather than a silent failure (which would score 0).
+  hybrid_rrf_rerank_top6:
+    kind: retrieval
+    mode: hybrid
+    top_k: 6
+    pool: 50
+    rrf_k: 60
+    rerank: llm
+    rerank_top_n: 20
+    requires_llm: true
+    implemented: false
+
+  # Answer systems use the same evidence cap and answer prompt once added.
+  fixed_rag_matched:
+    kind: answer
+    evidence_top_k: 6
+    requires_llm: true
+    implemented: false
+
+  agent_single_round:
+    kind: answer
+    evidence_top_k: 6
+    max_rounds: 1
+    requires_llm: true
+    implemented: false
+
+budget:
+  max_tokens: null

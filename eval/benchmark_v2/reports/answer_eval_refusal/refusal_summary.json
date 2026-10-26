@@ -1,0 +1,12 @@
+﻿{
+  "schema_version": 1,
+  "n": 12,
+  "strict_refusal_insufficient": 12,
+  "partial": 0,
+  "answered": 0,
+  "invalid": 0,
+  "strict_refusal_accuracy": 1.0,
+  "tokens": 22267,
+  "p95_latency_ms": 1282.09,
+  "note": "Template out-of-scope questions (GitHub stars, author age, GPU price, 2027 citations, etc.) paired with 12 evaluated papers. This is a focused out-of-scope refusal check, not a complete absent-info/false-premise refusal benchmark."
+}
