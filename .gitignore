@@ -1,0 +1,81 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors
+.idea/
+.vscode/
+
+# Project data and generated artifacts
+data/
+backups/
+*.pdf
+*.zip
+*.log
+tests/.tmp/
+
+# Private active profile and legacy local profile (public example is tracked)
+interests.json
+data/push/profile.json
+
+# Old handoff / personal artifacts (kept locally, not published)
+docs/handoff/
+docs/stage1a/
+docs/stage1b/
+docs/stage1c/
+eval/results/
+eval/reviews/
+paperlens_answer*
+review_notes/
+PROJECT_NOTES.md
+PROJECT_HANDOFF_*
+COLLECTION_*
+DATASET_*
+EVAL_START_HERE.md
+LARGE_DATASET_PLAN.md
+PACKAGE_CHECKS.json
+PREPARATION_REVIEW.json
+PREPARE_DATASET_START.md
+Q01_ACCEPTANCE.json
+SCHEMA_FIX_START.md
+SCREEN_DATASET_START.md
+dataset_targets.json
+
+# Old Chinese handoff / acceptance notes (kept locally, never published)
+使用说明*.md
+验收记录*.md
+接续记录.md
+README.txt
+
+# Isolated worktrees
+.worktrees/
+
+# Subagent-driven-development scratch workspace
+.superpowers/
+
+# Duplicate delivery bundles kept for history; not part of the repo
+PaperLens_*/
+
+
+# Rebuildable held-out index (manifest is committed)
+eval/benchmark_v2/index/
+eval/benchmark_v2/pilot/
+eval/benchmark_v2/eval31/
+eval/benchmark_v2/eval60/
+eval/benchmark_v2/runs/
+eval/benchmark_v2/questions.*.rejected.jsonl
+
+# 120-paper distractor index / temp benchmark
+eval/benchmark_v2/index120/
+eval/benchmark_v2/eval120/
+
+# Refusal benchmark index junction
+eval/benchmark_v2/refusal/index/

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "clean",
+  "dev_test_family_overlap": [],
+  "test_reserve_family_overlap": [],
+  "near_duplicate_title_pairs": [],
+  "near_duplicate_abstract_pairs": [],
+  "title_collisions": [],
+  "near_duplicate_pairs": [],
+  "excluded_reasons": {
+    "dev_family": 8,
+    "quality_flag:long_document_over_100_pages": 7,
+    "quality_flag:long_document_over_100_pages,some_low_text_pages": 8,
+    "quality_flag:some_low_text_pages": 75,
+    "quality_flag:some_low_text_pages,sparse_text_requires_review": 1,
+    "screening_invalid_response": 6,
+    "screening_out_of_scope": 391,
+    "screening_uncertain": 1,
+    "source_status:source_unavailable": 8
+  },
+  "excluded_total": 505,
+  "test_exclusion_leaks": [],
+  "test_index_namespace_ok": true,
+  "index_namespace": {
+    "index_paper_count": 40,
+    "foreign_families": [],
+    "dev_families": [],
+    "id_family_mismatches": [],
+    "foreign_chunk_paper_ids": [],
+    "missing_test_families": [],
+    "index_ids_not_in_test": []
+  },
+  "missing_pdf_or_index_ids": [],
+  "missing_details": {},
+  "missing_index_ids": [],
+  "missing_pdf_ids": [],
+  "missing_corpus_ids": [],
+  "review_required": [],
+  "blockers": [],
+  "summary": {
+    "dev_papers": 8,
+    "test_papers": 40,
+    "reserve_papers": 80,
+    "excluded_papers": 505,
+    "dev_test_family_overlap": 0,
+    "near_duplicate_title_pairs": 0,
+    "near_duplicate_abstract_pairs": 0,
+    "missing_pdf_or_index_ids": 0,
+    "test_index_namespace_ok": true,
+    "review_items": 0,
+    "blockers": 0
+  },
+  "generated_at": "2026-10-25T02:59:50.104119+00:00",
+  "generated_by": "eval/benchmark_v2/leakage_audit.py",
+  "inputs": {
+    "splits": {
+      "path": "eval\\benchmark_v2\\splits.draft.json",
+      "sha256": "46b0d3d60c4256163e188052c5c51bf1719fec4078e590c970888833af028c3c"
+    },
+    "index_manifest": {
+      "path": "eval\\benchmark_v2\\index_manifest.json",
+      "sha256": "584c1bd3929820e2873b9ea7dc755fa9e962de2400ad46207e41bc93a1d267d3"
+    },
+    "manifests": [
+      {
+        "path": "data\\dataset_v1\\prepared_v1\\manifest.json",
+        "paper_count": 1000,
+        "sha256": "cfc2e4b9ca62dd0303208cd16310a58216c93ecb440689d1523c6fa3ecf9d702"
+      },
+      {
+        "path": "data\\dataset_history_v1\\prepared_v1\\manifest.json",
+        "paper_count": 1133,
+        "sha256": "06e3f34f059b19737cfae0a757d77d1f00426b7c3c1c90fc8bcc6f8dc039bf30"
+      }
+    ]
+  }
+}

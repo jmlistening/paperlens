@@ -1,0 +1,54 @@
+{
+  "version": "paperlens_pilot_v1_20261021",
+  "description": "预先固定的 6 题 / 3 篇小规模试评测；非公开标准基准；RCER 不纳入。",
+  "cases": [
+    {
+      "id": "Q01",
+      "paper": "2610.19819v1",
+      "pdf_path": "data/pdfs/2610.19819v1.pdf",
+      "pdf_sha256": "affeaf97246da7f400d9b5c2ef36eda0500ecad88626dec17fcc315782017521",
+      "kind": "实验设置",
+      "query": "《The Cost of Context》使用了什么 GPU、哪两个模型及什么数值精度？为了隔离 prefill 阶段，生成长度设置为多少 token，并做了什么预热处理？"
+    },
+    {
+      "id": "Q02",
+      "paper": "2610.19341v1",
+      "pdf_path": "data/pdfs/2610.19341v1.pdf",
+      "pdf_sha256": "84581fb770cc1ed07230d333a8900e81b825215d85b1d4557f39a2c72388b212",
+      "kind": "输入边界与训练机制",
+      "query": "MMKG-R1 的构图为什么称为 question-blind？构造器能看到和不能看到哪些信息？训练时更新哪些组件，哪些组件保持固定？"
+    },
+    {
+      "id": "Q03",
+      "paper": "2610.22163v1",
+      "pdf_path": "data/pdfs/2610.22163v1.pdf",
+      "pdf_sha256": "5726ca5f9491dc5fe33e426e43538756a114edd0ac9fa74f15d03c08418a8bb9",
+      "kind": "检索流程机制",
+      "query": "Multi-sourced AI Tutor 为什么在 RAG 之前单独做 Question Extraction（QE），普通向量或关键词检索有什么困难？QE 如何得到原题内容，后续相似度搜索使用哪些输入、返回多少条结果？"
+    },
+    {
+      "id": "Q04",
+      "paper": "2610.19819v1",
+      "pdf_path": "data/pdfs/2610.19819v1.pdf",
+      "pdf_sha256": "affeaf97246da7f400d9b5c2ef36eda0500ecad88626dec17fcc315782017521",
+      "kind": "表格数值与适用范围",
+      "query": "在《The Cost of Context》中，约 112k 输入 token 时，Llama-3.1 8B 的 HF Baseline 与 vLLM 分别报告了多少 prefill 延迟和能耗？论文报告的能效提升约为多少倍？请保留实验条件，不要推广成所有模型的固定提升。"
+    },
+    {
+      "id": "Q05",
+      "paper": "2610.19341v1",
+      "pdf_path": "data/pdfs/2610.19341v1.pdf",
+      "pdf_sha256": "84581fb770cc1ed07230d333a8900e81b825215d85b1d4557f39a2c72388b212",
+      "kind": "奖励层级与职责",
+      "query": "MMKG-R1 的 Deducibility、Source-Grounded Quality 和 Graph-Readiness 三种奖励各自检查什么？它们分别在图级还是知识源抽取级计算，为什么采用不同层级？"
+    },
+    {
+      "id": "Q06",
+      "paper": "2610.19819v1",
+      "pdf_path": "data/pdfs/2610.19819v1.pdf",
+      "pdf_sha256": "affeaf97246da7f400d9b5c2ef36eda0500ecad88626dec17fcc315782017521",
+      "kind": "不可回答边界",
+      "query": "仅依据《The Cost of Context》，RTX 4060 运行 PaperLens 每月 1000 次论文问答的电费精确是多少人民币？请给出论文报告的金额；没有报告就明确说明，不要自行估算。"
+    }
+  ]
+}

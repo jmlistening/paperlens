@@ -1,0 +1,20 @@
+[
+  {
+    "arxiv_id": "2601.90001v1",
+    "score": 92,
+    "reason": "Directly matches the RAG and evidence-citation research goal.",
+    "limitation": "Only a small literature-review evaluation."
+  },
+  {
+    "arxiv_id": "2601.90002v1",
+    "score": 40,
+    "reason": "Database indexing is outside the stated interests.",
+    "limitation": ""
+  },
+  {
+    "arxiv_id": "2601.90003v1",
+    "score": 45,
+    "reason": "Hardware energy profiling is explicitly less interesting.",
+    "limitation": ""
+  }
+]

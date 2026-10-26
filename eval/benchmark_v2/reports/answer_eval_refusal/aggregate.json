@@ -1,0 +1,228 @@
+{
+  "version": "answer_eval_v1",
+  "generated_by": "eval/answer_eval.py",
+  "created_at": "2026-10-25T05:07:24+00:00",
+  "retrieval_run": "eval\\benchmark_v2\\runs\\eval_refusal\\hybrid_rrf_top6",
+  "retrieval_run_root": "eval\\benchmark_v2\\runs\\eval_refusal",
+  "retrieval_system": "hybrid_rrf_top6",
+  "benchmark_dir": "eval\\benchmark_v2\\refusal",
+  "corpus_path": "eval\\benchmark_v2\\refusal\\index\\corpus_clean.json",
+  "answer_model": "deepseek-flash",
+  "confidence": 0.95,
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed_policy": "sha256('answer_eval\\x1f<metric>')[:8]; deterministic",
+  "disclaimer": "Citation-level evaluation only: this measures JSON schema validity, exact quote copying, and whether the answer cited the gold parent chunks and gold-point quotes. It is NOT answer accuracy, correctness, completeness, or faithfulness. There is no LLM judge and no human review.",
+  "n": 12,
+  "n_failed": 0,
+  "failures": [],
+  "status_counts": {
+    "answered": 0,
+    "partial": 0,
+    "insufficient": 12,
+    "invalid": 0
+  },
+  "metrics": {
+    "schema_success": {
+      "mean": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n": 12,
+      "resamples": 2000,
+      "label": "Schema success"
+    },
+    "quote_integrity": {
+      "mean": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n": 12,
+      "resamples": 2000,
+      "label": "Quote integrity"
+    }
+  },
+  "tokens": {
+    "n": 12,
+    "total": 22267,
+    "mean": 1855.5833333333333
+  },
+  "latency_ms": {
+    "n": 12,
+    "mean": 1004.5604166666668,
+    "p50": 1029.4605000000001,
+    "p95": 1282.08855
+  },
+  "per_question": [
+    {
+      "question_id": "r001",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 1855,
+      "latency_ms": 1031.304,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r002",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 1257,
+      "latency_ms": 639.104,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r003",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 2301,
+      "latency_ms": 884.185,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r004",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 2566,
+      "latency_ms": 866.231,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r005",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 2398,
+      "latency_ms": 1027.617,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r006",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 1296,
+      "latency_ms": 715.849,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r007",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 2328,
+      "latency_ms": 1170.164,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r008",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 2191,
+      "latency_ms": 1140.348,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r009",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 2126,
+      "latency_ms": 1082.01,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r010",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 1430,
+      "latency_ms": 1403.825,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r011",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 1453,
+      "latency_ms": 911.602,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    },
+    {
+      "question_id": "r012",
+      "status": "ok",
+      "answer_status": "insufficient",
+      "error": null,
+      "tokens": 1066,
+      "latency_ms": 1182.486,
+      "metrics": {
+        "schema_success": 1.0,
+        "quote_integrity": 1.0,
+        "cited_gold_parent_recall": null,
+        "gold_point_citation_recall": null
+      }
+    }
+  ],
+  "notes": [
+    "Failed or schema-invalid answers stay in the denominator and are scored 0.",
+    "Empty-gold questions are excluded from ratio metrics (n is smaller) but not from schema_success or status counts.",
+    "Bootstrap intervals are descriptive: the benchmark is a fixed set, not a random sample."
+  ]
+}

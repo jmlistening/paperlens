@@ -1,0 +1,193 @@
+{
+  "question_id": "q001",
+  "system": "agent_single",
+  "status": "ok",
+  "answer_status": "insufficient",
+  "answer_source": "harness_abstention",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": "deepseek-flash",
+  "raw_response": {
+    "status": "insufficient",
+    "points": [],
+    "limitations": [
+      "未找到涉及 ReSearch_SSH 用例的论文或片段",
+      "缺少大规模领域对齐所用数据库 SSH 子集的名称",
+      "缺少该 SSH 子集的文档数量"
+    ]
+  },
+  "usage": null,
+  "tokens": 3786,
+  "latency_ms": 18734.314,
+  "answer_latency_ms": 0.0,
+  "retrieval_latency_ms": 17005.035,
+  "tool_calls": 1,
+  "retrieval_rounds": 1,
+  "stop_reason": "round_budget",
+  "retrieved_parent_ids": [],
+  "selected_evidence_ids": [],
+  "candidate_ids": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20"
+  ],
+  "evidence": [],
+  "cited_evidence_ids": [],
+  "cited_parent_ids": [],
+  "gold_parent_ids": [
+    "2607.05956v1:16754d9cb8c4:clean2:p4:g1:c1"
+  ],
+  "gold_point_count": 2,
+  "metrics": {
+    "schema_success": null,
+    "quote_integrity": null,
+    "cited_gold_parent_recall": 0.0,
+    "gold_point_citation_recall": 0.0
+  },
+  "trace": [
+    {
+      "kind": "retrieval",
+      "round": 1,
+      "tool": "search_dense",
+      "query": "ReSearch_SSH用例中，用于大规模领域对齐的主要语料库是哪个数据库的SSH子集？该SSH子集大约包含多少篇文档？",
+      "candidate_count": 20,
+      "new_count": 20,
+      "sources": [
+        {
+          "id": "C1",
+          "paper": "2511.16283v1",
+          "page": 5
+        },
+        {
+          "id": "C2",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C3",
+          "paper": "2607.20926v1",
+          "page": 4
+        },
+        {
+          "id": "C4",
+          "paper": "2608.01565v1",
+          "page": 1
+        },
+        {
+          "id": "C5",
+          "paper": "2607.20284v1",
+          "page": 6
+        },
+        {
+          "id": "C6",
+          "paper": "2607.04610v1",
+          "page": 1
+        },
+        {
+          "id": "C7",
+          "paper": "2608.30214v1",
+          "page": 3
+        },
+        {
+          "id": "C8",
+          "paper": "2607.20926v1",
+          "page": 3
+        },
+        {
+          "id": "C9",
+          "paper": "2610.26339v1",
+          "page": 10
+        },
+        {
+          "id": "C10",
+          "paper": "2607.10463v1",
+          "page": 7
+        },
+        {
+          "id": "C11",
+          "paper": "2608.01565v1",
+          "page": 8
+        },
+        {
+          "id": "C12",
+          "paper": "2607.06618v2",
+          "page": 6
+        },
+        {
+          "id": "C13",
+          "paper": "2011.13137v2",
+          "page": 4
+        },
+        {
+          "id": "C14",
+          "paper": "2607.20926v1",
+          "page": 1
+        },
+        {
+          "id": "C15",
+          "paper": "2608.30214v1",
+          "page": 6
+        },
+        {
+          "id": "C16",
+          "paper": "2607.19238v1",
+          "page": 1
+        },
+        {
+          "id": "C17",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C18",
+          "paper": "2607.16604v2",
+          "page": 1
+        },
+        {
+          "id": "C19",
+          "paper": "2511.16283v1",
+          "page": 5
+        },
+        {
+          "id": "C20",
+          "paper": "2412.10704v2",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 1,
+      "assessment": "insufficient",
+      "selected_ids": [],
+      "action": "search_dense",
+      "query": "ReSearch SSH benchmark domain alignment corpus database SSH subset number of documents",
+      "missing": [
+        "未找到涉及 ReSearch_SSH 用例的论文或片段",
+        "缺少大规模领域对齐所用数据库 SSH 子集的名称",
+        "缺少该 SSH 子集的文档数量"
+      ],
+      "reason": "首轮候选均为无关论文片段，未见 ReSearch 相关内容；换用英文语义查询补检该用例语料库信息"
+    }
+  ],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:43+00:00",
+  "run_signature": "f21bf4301e289cf1315245e7e685e9f826acd49a787968c2e95f892c133081f1"
+}

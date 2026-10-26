@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">PaperLens architecture</title>
+<desc id="desc">RAG and bounded Agent pipelines for paper discovery, evidence-grounded QA, and auditable daily push.</desc>
+
+<defs>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M28 0H0V28" fill="none" stroke="#E8E3D8" stroke-width="0.7"/>
+  </pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B6675"/>
+  </marker>
+  <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#0F766E"/>
+  </marker>
+  <marker id="arrow-dash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#B45309"/>
+  </marker>
+</defs>
+
+<rect width="1200" height="620" fill="#F6F3EC"/>
+<rect width="1200" height="620" fill="url(#grid)"/>
+<text x="48" y="54" font-family="Georgia, 'Noto Serif SC', serif" font-size="34" font-weight="600" fill="#1C2430">PaperLens architecture</text>
+<text x="48" y="80" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="14" fill="#0F766E" letter-spacing="1.2">RAG × AGENT × LOCAL-FIRST</text>
+<rect x="36" y="108" width="220" height="402" rx="14" fill="#EFEBE1" stroke="#D9D3C6"/>
+<text x="56" y="136" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#0F766E" letter-spacing="1">SOURCES</text>
+<rect x="286" y="108" width="560" height="402" rx="14" fill="#EFEBE1" stroke="#D9D3C6"/>
+<text x="306" y="136" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#0F766E" letter-spacing="1">PIPELINES</text>
+<rect x="876" y="108" width="288" height="402" rx="14" fill="#EFEBE1" stroke="#D9D3C6"/>
+<text x="896" y="136" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#0F766E" letter-spacing="1">SURFACES</text>
+<rect x="56" y="158" width="180" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="146.0" y="181" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">arXiv API</text>
+<text x="146.0" y="198" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">metadata / search</text>
+<rect x="56" y="228" width="180" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="146.0" y="251" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">PDFs</text>
+<text x="146.0" y="268" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">local corpus</text>
+<rect x="56" y="298" width="180" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="146.0" y="321" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">DeepSeek</text>
+<text x="146.0" y="338" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">rank / summarize</text>
+<rect x="56" y="368" width="180" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="146.0" y="391" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">163 SMTP</text>
+<text x="146.0" y="408" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">digest delivery</text>
+<text x="326" y="176" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="#5B6675" letter-spacing="1">PUSH</text>
+<text x="586" y="176" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="#5B6675" letter-spacing="1">RAG + AGENT</text>
+<rect x="326" y="188" width="220" height="52" rx="9" fill="#E8F3F0" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="436.0" y="211" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">fetch</text>
+<text x="436.0" y="228" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">watermark / cooldown</text>
+<rect x="326" y="258" width="220" height="52" rx="9" fill="#E8F3F0" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="436.0" y="281" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">rank + summarize</text>
+<text x="436.0" y="298" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">constrained candidate pool</text>
+<rect x="326" y="328" width="220" height="52" rx="9" fill="#E8F3F0" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="436.0" y="351" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">send</text>
+<text x="436.0" y="368" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">preview gate / approval</text>
+<rect x="326" y="398" width="220" height="52" rx="9" fill="#E8F3F0" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="436.0" y="421" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">delivery ledger</text>
+<text x="436.0" y="438" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">idempotent / auto-pause</text>
+<rect x="586" y="188" width="230" height="52" rx="9" fill="#F2EFE6" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="701.0" y="211" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">parse + clean</text>
+<text x="701.0" y="228" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">page / block / bbox</text>
+<rect x="586" y="258" width="230" height="52" rx="9" fill="#F2EFE6" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="701.0" y="281" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">parent / child chunks</text>
+<text x="701.0" y="298" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">parent for context, child for search</text>
+<rect x="586" y="328" width="230" height="52" rx="9" fill="#F2EFE6" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="701.0" y="351" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">E5 + FAISS  |  BM25</text>
+<text x="701.0" y="368" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">RRF + DeepSeek rerank</text>
+<rect x="586" y="398" width="230" height="52" rx="9" fill="#F2EFE6" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="701.0" y="421" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">answer + citations</text>
+<text x="701.0" y="438" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">verbatim quote / page / bbox</text>
+<rect x="896" y="158" width="248" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="1020.0" y="181" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">Streamlit 每日推送</text>
+<text x="1020.0" y="198" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">topics / email / count / time</text>
+<rect x="896" y="228" width="248" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="1020.0" y="251" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">高级 / 研究模式</text>
+<text x="1020.0" y="268" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">overview / history / interests</text>
+<rect x="896" y="298" width="248" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="1020.0" y="321" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">证据问答</text>
+<text x="1020.0" y="338" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">fixed RAG / bounded Agent</text>
+<rect x="896" y="368" width="248" height="52" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="1020.0" y="391" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">Windows 计划任务</text>
+<text x="1020.0" y="408" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">optional daily trigger</text>
+<rect x="286" y="540" width="878" height="58" rx="14" fill="#EFEBE1" stroke="#D9D3C6"/>
+<text x="306" y="532" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#5B6675" letter-spacing="1">STATE</text>
+<rect x="306" y="552" width="260" height="34" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="436.0" y="575" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">data/push</text>
+<text x="436.0" y="592" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">frontier · ui_state · runs</text>
+<rect x="586" y="552" width="260" height="34" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="716.0" y="575" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">data/rag</text>
+<text x="716.0" y="592" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">index · answers</text>
+<rect x="866" y="552" width="278" height="34" rx="9" fill="#FFFDF8" stroke="#D9D3C6" stroke-width="1.2"/>
+<text x="1005.0" y="575" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600" fill="#1C2430">eval/</text>
+<text x="1005.0" y="592" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">benchmarks · reports</text>
+<path d="M 236 184 L 286 184 L 286 214 L 326 214" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 236 254 L 266 254 L 266 102 L 560 102 L 560 214 L 586 214" fill="none" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow-dash)" stroke-linejoin="round"/>
+<path d="M 236 324 L 306 324 L 306 284 L 326 284" fill="none" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow-dash)" stroke-linejoin="round"/>
+<path d="M 326 354 L 260 354 L 260 394 L 236 394" fill="none" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow-dash)" stroke-linejoin="round"/>
+<path d="M 436 240 L 436 258" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 436 310 L 436 328" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 436 380 L 436 398" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 701 240 L 701 258" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 701 310 L 701 328" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 701 380 L 701 398" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 816 424 C 858 424 858 354 816 354" fill="none" stroke="#0F766E" stroke-width="1.8" marker-end="url(#arrow-teal)" stroke-linecap="round"/>
+<text x="824" y="340" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#0F766E">agent loop</text>
+<path d="M 896 184 L 846 184" fill="none" stroke="#0F766E" stroke-width="1.6" marker-end="url(#arrow-teal)" stroke-linejoin="round"/>
+<path d="M 896 324 L 846 324" fill="none" stroke="#0F766E" stroke-width="1.6" marker-end="url(#arrow-teal)" stroke-linejoin="round"/>
+<path d="M 896 394 L 846 394" fill="none" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow-dash)" stroke-linejoin="round"/>
+<path d="M 436 450 L 436 552" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 701 450 L 701 552" fill="none" stroke="#5B6675" stroke-width="1.6" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="48" y="586" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10.5" fill="#5B6675">solid = local pipeline   ·   dashed = model / scheduler boundary</text>
+</svg>

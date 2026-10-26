@@ -1,0 +1,103 @@
+{
+  "question_id": "q004",
+  "system": "fixed_rag",
+  "status": "ok",
+  "answer_status": "answered",
+  "answer_source": "model",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": null,
+  "raw_response": "{\"status\": \"answered\", \"points\": [{\"text\": \"作者使用 BioASQ 训练集构造正负样本：正例为标注为相关的问答-文档对，负例为检索到但未标注为相关的文档。\", \"citations\": [{\"id\": \"E1\", \"quote\": \"Positive training examples consisted of BioASQ question–document pairs annotated as relevant, while negative examples were constructed from retrieved documents that were not annotated as relevant for the corresponding question.\"}]}, {\"text\": \"得到的数据集被随机划分为 90% 训练集和 10% 验证集。\", \"citations\": [{\"id\": \"E1\", \"quote\": \"The resulting dataset was randomly divided into 90% training and 10% validation.\"}]}, {\"text\": \"重排序器共训练 10 个 epoch。\", \"citations\": [{\"id\": \"E1\", \"quote\": \"The reranker was optimized for 10 epochs using MultipleNegativesRankingLoss with Adam optimization and a linear warm-up schedule.\"}, {\"id\": \"E2\", \"quote\": \"Figure 3 illustrates the training and validation loss curves over 10 training epochs.\"}]}], \"limitations\": []}",
+  "usage": {
+    "completion_tokens": 259,
+    "prompt_tokens": 2574,
+    "total_tokens": 2833,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 2432,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 2432,
+    "prompt_cache_miss_tokens": 142
+  },
+  "tokens": 2833,
+  "latency_ms": 1380.118,
+  "answer_latency_ms": 1380.118,
+  "retrieval_latency_ms": 0.0,
+  "tool_calls": 0,
+  "retrieval_rounds": 0,
+  "stop_reason": "precomputed_retrieval",
+  "retrieved_parent_ids": [
+    "2608.01468v1:16754d9cb8c4:clean2:p5:g1:c1",
+    "2608.01468v1:16754d9cb8c4:clean2:p7:g1:c1",
+    "2109.03754v2:16754d9cb8c4:clean2:p14:g1:c1",
+    "2011.13137v2:16754d9cb8c4:clean2:p11:g1:c1",
+    "2012.12624v3:16754d9cb8c4:clean2:p14:g1:c1",
+    "2609.04999v1:16754d9cb8c4:clean2:p6:g1:c2"
+  ],
+  "selected_evidence_ids": [],
+  "candidate_ids": [],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2608.01468v1:16754d9cb8c4:clean2:p5:g1:c1",
+      "title": "Retrieval Augmented Biomedical Question Answering with Weak Question Recovery and Neural Reranking for BioASQ Task 14b",
+      "page_number": 5
+    },
+    {
+      "id": "E2",
+      "parent_chunk_id": "2608.01468v1:16754d9cb8c4:clean2:p7:g1:c1",
+      "title": "Retrieval Augmented Biomedical Question Answering with Weak Question Recovery and Neural Reranking for BioASQ Task 14b",
+      "page_number": 7
+    },
+    {
+      "id": "E3",
+      "parent_chunk_id": "2109.03754v2:16754d9cb8c4:clean2:p14:g1:c1",
+      "title": "2109.03754v2",
+      "page_number": 14
+    },
+    {
+      "id": "E4",
+      "parent_chunk_id": "2011.13137v2:16754d9cb8c4:clean2:p11:g1:c1",
+      "title": "2011.13137v2",
+      "page_number": 11
+    },
+    {
+      "id": "E5",
+      "parent_chunk_id": "2012.12624v3:16754d9cb8c4:clean2:p14:g1:c1",
+      "title": "2012.12624v3",
+      "page_number": 14
+    },
+    {
+      "id": "E6",
+      "parent_chunk_id": "2609.04999v1:16754d9cb8c4:clean2:p6:g1:c2",
+      "title": "BIT.UA at BioASQ 14B: Modular Retrieval with pg_textsearch and Qdrant, and Agent-Based Answer Generation",
+      "page_number": 6
+    }
+  ],
+  "cited_evidence_ids": [
+    "E1",
+    "E2"
+  ],
+  "cited_parent_ids": [
+    "2608.01468v1:16754d9cb8c4:clean2:p5:g1:c1",
+    "2608.01468v1:16754d9cb8c4:clean2:p7:g1:c1"
+  ],
+  "gold_parent_ids": [
+    "2608.01468v1:16754d9cb8c4:clean2:p5:g1:c1"
+  ],
+  "gold_point_count": 2,
+  "metrics": {
+    "schema_success": 1.0,
+    "quote_integrity": 1.0,
+    "cited_gold_parent_recall": 1.0,
+    "gold_point_citation_recall": 1.0
+  },
+  "trace": [],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:21+00:00",
+  "run_signature": "64d858ace749136e3d9a960bfaed4fc399ea63a27f6e875e818704d98499b7f0"
+}

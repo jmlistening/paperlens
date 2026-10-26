@@ -1,0 +1,16 @@
+{
+  "case_type": "development_regression_case_not_held_out_test",
+  "paper_id": "2610.19398v1",
+  "source": "user_export_from_fixed_RAG",
+  "answer_status_self_assessed": "partial",
+  "quote_occurrences": 7,
+  "unique_evidence_ids": 3,
+  "citation_pages": [
+    1,
+    3
+  ],
+  "sha256": "8745bcdf1563d2f3181cd2507202c60565e19c96283860d9999065e3a747f4dc",
+  "usage": null,
+  "latency": null,
+  "candidate_trace_available": false
+}

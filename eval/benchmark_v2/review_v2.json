@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-25T03:36:33+00:00",
+  "reviewer_type": "model",
+  "reviewer": "Claude Code (model)",
+  "human_reviewed": false,
+  "method": "programmatic + model review; variant pass",
+  "base_questions": 31,
+  "variant_accepted": 29,
+  "variant_rejected": 6,
+  "total": 60,
+  "rejected_ids": [
+    "q003",
+    "q007",
+    "q010",
+    "q024",
+    "q031",
+    "q038",
+    "q120"
+  ],
+  "notes": [
+    "No human annotator reviewed these questions.",
+    "Base 31 questions are the frozen benchmark_v1 set; variants are new questions on the same 40 papers."
+  ]
+}

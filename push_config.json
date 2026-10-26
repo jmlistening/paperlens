@@ -1,0 +1,18 @@
+{
+  "enabled": false,
+  "paused": false,
+  "quiet_mode": false,
+  "frequency": "daily",
+  "time_local": "08:30",
+  "provider": "163",
+  "attach_pdfs": false,
+  "window_hours": 72,
+  "overlap_hours": 24,
+  "catchup_days": 7,
+  "fetch_pool_limit": 40,
+  "rank_max_candidates": 20,
+  "max_per_digest": 3,
+  "max_per_primary_category": 2,
+  "min_new_papers": 1,
+  "auto_pause_after_failures": 3
+}

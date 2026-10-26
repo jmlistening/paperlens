@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "source": "generate_questions.py --translate-query (query_en produced by a separate call that sees only question_zh)",
+  "questions": 60,
+  "mean_query_token_overlap_with_gold": 0.4079,
+  "questions_with_4gram_overlap": 5,
+  "rows": [
+    {
+      "question_id": "q001",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "d2c36b5ce1965b99ba8c9c0082a425cefb367d91c2963fe8396e03bedbef7dcd",
+      "query_token_overlap_with_gold": 0.6923,
+      "query_4gram_matches_gold": 1
+    },
+    {
+      "question_id": "q002",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "3118ba6953bd5066b2d535df6347ff64cfa4e5bbb1f8064daff1b090e9ceba86",
+      "query_token_overlap_with_gold": 0.4737,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q004",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "9ad8f60885c65ea41f17cb1928041e06e3b227e2c19d5d979d5ebad90a4c3247",
+      "query_token_overlap_with_gold": 0.375,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q005",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "615191d9db6745179ad1e5a6a2e7780166f05a5061c9e2dd8d3fa5b02d4e1f37",
+      "query_token_overlap_with_gold": 0.2273,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q007",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "28f7b28c5b5316708aca795fbf02b91f450c9b6c886f82f5cfe449ece3f35bbf",
+      "query_token_overlap_with_gold": 0.625,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q009",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "b25ba0523821a857619144b53733bc32f474114847b15a6e309c371689fd2689",
+      "query_token_overlap_with_gold": 0.6875,
+      "query_4gram_matches_gold": 3
+    },
+    {
+      "question_id": "q010",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "4cdfa4c8cbf6af177009dbef46d2a75bdef0ebb2ac1ac9aa00af48133c6386a0",
+      "query_token_overlap_with_gold": 0.3846,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q011",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "fccf7e56da714e88df153b84862f74f076b63cace4cc197eee4597812916821d",
+      "query_token_overlap_with_gold": 0.4615,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q012",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "ad7a1b0ede061afdfd5e0d8c8d42668fed4e2f50c1c9b02694e963eba287eb47",
+      "query_token_overlap_with_gold": 0.5455,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q013",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "a4da3d5e44e79d46b50c900d3b7e7c4104a923eb707ba9891fec261cd1d7b8f6",
+      "query_token_overlap_with_gold": 0.4444,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q014",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "078078f022d9e8ef4b2e09daaa774ff73ec53df62940982aaa8142b54702eb77",
+      "query_token_overlap_with_gold": 0.3158,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q015",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "026acd073123fa3bc4794c09764c56684224aba6d5de8d267dc7ee8e2cebca63",
+      "query_token_overlap_with_gold": 0.7143,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q016",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "8e0c887a69f6f9e2f0593916145a1fcb1f8b3e71033a1c6179c7266930da2421",
+      "query_token_overlap_with_gold": 0.4,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q017",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "da4109e3ca2c2840cf688d06beb49eb900dfe20714f510e522aaf081c517c0b7",
+      "query_token_overlap_with_gold": 0.3846,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q018",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "017ba0e270801f18b594896128d418304df21c6b93c921d0313a11dc196a446a",
+      "query_token_overlap_with_gold": 0.7083,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q019",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "3930ce6836a2942cf9b94549b28808eaf24061647f7b47bbc763aa6474544b78",
+      "query_token_overlap_with_gold": 0.1429,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q020",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "b0f07e66cab8e0f058810dc2e10353a72fb222961d7310e932288504b161a6ac",
+      "query_token_overlap_with_gold": 0.3684,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q021",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "afe5c29eeddebc23a2918f23078a282361e084a3ea020cb4181f98ee29835fc5",
+      "query_token_overlap_with_gold": 0.1667,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q023",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "84a7c3d792e006dc0ccac0c35ba074e2b9c914a117e002d4379d543050935828",
+      "query_token_overlap_with_gold": 0.4,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q025",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "6baa3d8c0793d780c373432343125cb6ca57b32a72aaeb277f0c9389a9d2e93a",
+      "query_token_overlap_with_gold": 0.4286,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q027",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "6b3c677c4f1cf883b84b845ddafef96355468fdb96ed40b4437afc8f2c803cf8",
+      "query_token_overlap_with_gold": 0.1176,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q028",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "869ef5f701c120a34ba7dcb39165b1392d1f1273f95b1a9a82c35c0f1ec41cef",
+      "query_token_overlap_with_gold": 0.3889,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q029",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "6cd364f0dfdfd4f023c65046ef99091586fff8e6cdfb198641517dc271459612",
+      "query_token_overlap_with_gold": 0.5,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q030",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "7ed0f543025a8b9f82d0a6a2cf9bada29286da3e73babbf23334f35c7d6cc2ab",
+      "query_token_overlap_with_gold": 0.3,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q032",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "436dea0fabcf66d7e656709793e266913e09ef5db7964b836bdcede3d8329aa2",
+      "query_token_overlap_with_gold": 0.4231,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q033",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "492d538e771e2ca673b42e9ccaaf7cf8d3845eb33123183093e6801264de06f9",
+      "query_token_overlap_with_gold": 0.2143,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q035",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "5e1d8faed80b4f9ef26e7da12ea15c4ec265588a4ba335bf72400b2945586c18",
+      "query_token_overlap_with_gold": 0.6667,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q036",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "31a1a8714d77cea49cc5951d705847c4d9a87e4acdd645a0bfcc183552b73dac",
+      "query_token_overlap_with_gold": 0.5,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q037",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "fb8d3a81c64a58d9a66eb5d9fc8c4b3a6ba1a320e99a20850291bb9237fa0745",
+      "query_token_overlap_with_gold": 0.2857,
+      "query_4gram_matches_gold": 1
+    },
+    {
+      "question_id": "q038",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "4ac85090c9395dadc56df41608a35873c64872dbd256f20e55f4bc1a993adb77",
+      "query_token_overlap_with_gold": 0.0,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q040",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "a039cef006a270f034b42587cc2219aea23d5993e21f0e13cf6c9cb066fb9c12",
+      "query_token_overlap_with_gold": 0.4375,
+      "query_4gram_matches_gold": 1
+    },
+    {
+      "question_id": "q101",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "237a543b9983e455047f7b27b362ef63f7f8ae25c592fb46720707a1a575fe92",
+      "query_token_overlap_with_gold": 0.4762,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q102",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "141a91c5cadfc1d6656c97a36d422ed9f150a5b92997c53ac326f1546cbed84c",
+      "query_token_overlap_with_gold": 0.6471,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q103",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "761032aff71931a7acd716a68cc15b877e5f5706b8b1b3371b05f47d950ce49b",
+      "query_token_overlap_with_gold": 0.4545,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q104",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "557505d8ffec8154750c9bc0b4c90a293621fda1630191508dc51d557c1d85a2",
+      "query_token_overlap_with_gold": 0.36,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q105",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "8343b7c90c318022f1f7d21b1eea890c01a92e05e85ec7879218a6afb8e514ee",
+      "query_token_overlap_with_gold": 0.0833,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q106",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "3cbf6a64a8bcfe4b1f4480f4a3d8743587f8b7517fb94d62ad76ef37d3cb6161",
+      "query_token_overlap_with_gold": 0.4,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q107",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "e23a8424f3fe3037da1b4d3b30fc809d8cb24cd24f0efaf0947b055cb3dd5470",
+      "query_token_overlap_with_gold": 0.3077,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q108",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "2b8d9f65ad51f115527d3492badd061f2fd585f7af05d32f5e75b0fc5b6ba0a3",
+      "query_token_overlap_with_gold": 0.2963,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q109",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "95f6f8e3470964b98e700a952c6348374c140d0ca84d85244b9a84635791ae32",
+      "query_token_overlap_with_gold": 0.4737,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q110",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "14de666df926f183af1b35968142c31fd70ace37380407419d01ec076a3575cd",
+      "query_token_overlap_with_gold": 0.4375,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q111",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "55e3e757b020bb7dc674b9468d8a1fd6c3b4e55f4acf8265100b4edb729446eb",
+      "query_token_overlap_with_gold": 0.2692,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q112",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "06b059998b6370eac6135347fe05d739d155c4ebf3949c6676b5d5cf0778bf06",
+      "query_token_overlap_with_gold": 0.55,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q113",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "60621f7131770925f5af30b2953d18b98d734e623c875c099b283c1850a3ec26",
+      "query_token_overlap_with_gold": 0.4667,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q114",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "42bdda51c36c2a82445c32e45826d98c44e0cfd8577c0c07bdaa0fbe89597892",
+      "query_token_overlap_with_gold": 0.3846,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q115",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "5936a1ac86745ef9b5152eb68ea23a5317e2bbda97eee090ece497aee63ab515",
+      "query_token_overlap_with_gold": 0.4167,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q116",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "b8002a62201346876c4a0b0ca682e20a1da3d51f882c54ea0d648b3c860498d7",
+      "query_token_overlap_with_gold": 0.5882,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q117",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "49641e52719eda23ec673f4f2e0fd7b0515ec85c5ba06e81a8abccdc5500e469",
+      "query_token_overlap_with_gold": 0.4737,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q118",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "c32a51aa92eebb607a8d65ab3f51136f48f5bbe5de10ef36e11d97a6a6467a10",
+      "query_token_overlap_with_gold": 0.2222,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q119",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "e115c3486e4e1ae2c4f93bee6173dea8340016ec21ab5fa32d7d5b07de19e48c",
+      "query_token_overlap_with_gold": 0.16,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q121",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "05972d58e85ab5d2742ba9b9f1c5a8fd8c3808ef5ca97f2892bf3e5328818ff9",
+      "query_token_overlap_with_gold": 0.3913,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q122",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "dd903510dd2f20d78b56e4eaff8a0feadea3ef7a7fa1ba972b744fa2e56e6a90",
+      "query_token_overlap_with_gold": 0.2941,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q123",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "6efa52b9013169003ca2c2820812fe575e685184a09f65cb050549b0ccb4b2ce",
+      "query_token_overlap_with_gold": 0.6667,
+      "query_4gram_matches_gold": 1
+    },
+    {
+      "question_id": "q124",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "34124f95f70ae15b187626d4baf3962a637e1decf515b7a0d7ebbc3c2f246b3b",
+      "query_token_overlap_with_gold": 0.6364,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q125",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "b7c375831c6c2e4a2bdcc04ef1b8cb10035b5fa5c9a378620fa560107d4b6b51",
+      "query_token_overlap_with_gold": 0.3333,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q126",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "a4523df4b26ff471531ac54fa6b32cb09ceff22bc2b2082d4766751b26d76690",
+      "query_token_overlap_with_gold": 0.4211,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q127",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "ea8f412c2265e48402a5ddc38a72bae2e041927b8fc5cfed39dd8744f5e3f763",
+      "query_token_overlap_with_gold": 0.4762,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q128",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "a75c18ef247b2028de6069643d1d8e5b90418e0287457cd46f90989b3438c652",
+      "query_token_overlap_with_gold": 0.25,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q129",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "a6ae6a9d1f0d0e3b8adf9782d73a28cf0b2dc5dbb3202a7e57d3cd6ec9ff7a1e",
+      "query_token_overlap_with_gold": 0.3636,
+      "query_4gram_matches_gold": 0
+    },
+    {
+      "question_id": "q130",
+      "query_source": "page_blind_translation",
+      "translation_prompt_sha256": "e57dd04efe7191ed34edc3a69cbc508446e368c70250f6075ff83d8078746fc7",
+      "query_token_overlap_with_gold": 0.3913,
+      "query_4gram_matches_gold": 0
+    }
+  ],
+  "note": "Overlap is expected when the question itself names paper-specific concepts; it is not proof that query_en saw the page. The translation call is page-blind."
+}

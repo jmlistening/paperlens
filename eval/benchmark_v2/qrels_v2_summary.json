@@ -1,0 +1,115 @@
+{
+  "out_path": "eval\\benchmark_v2\\qrels.v2.jsonl",
+  "count": 60,
+  "question_count": 60,
+  "with_gold": 60,
+  "without_gold": 0,
+  "unanswerable_count": 0,
+  "gold_parent_id_count": 83,
+  "unmatched_quotes": [
+    {
+      "question_id": "q001",
+      "quote": "an SSH-specific extraction (approximately 3 million documents) has been prepared based on disciplinary classifications and quality criteria",
+      "pdf_page": 4,
+      "paper_ids": [
+        "2607.05956v1"
+      ]
+    },
+    {
+      "question_id": "q009",
+      "quote": "SPARK synthesizes scientific reasoning data from four perspectives: (1) mechanistic reasoning, which explains\nwhy an observed phenomenon occurs (Machamer\net al.",
+      "pdf_page": 2,
+      "paper_ids": [
+        "2608.30214v1"
+      ]
+    },
+    {
+      "question_id": "q010",
+      "quote": "reaching 76.68% accuracy on OpenAlex and 73.43% accuracy on DBLP",
+      "pdf_page": 3,
+      "paper_ids": [
+        "2609.00761v1"
+      ]
+    },
+    {
+      "question_id": "q035",
+      "quote": "For each domain, we curate 100 multi-intent questions that admit multiple valid answers, resulting in 500 questions overall.",
+      "pdf_page": 3,
+      "paper_ids": [
+        "2511.16283v1"
+      ]
+    },
+    {
+      "question_id": "q035",
+      "quote": "For every question, we retrieve 20 articles without manual filtering, collecting 10,000 documents in total.",
+      "pdf_page": 3,
+      "paper_ids": [
+        "2511.16283v1"
+      ]
+    },
+    {
+      "question_id": "q101",
+      "quote": "contextualisation relies mainly on the Wikidata\nknowledge graph for entity disambiguation and semantic expansion, while relational structures derived from metad",
+      "pdf_page": 3,
+      "paper_ids": [
+        "2607.05956v1"
+      ]
+    },
+    {
+      "question_id": "q104",
+      "quote": "Thus, all nodes retain profiles derived from the underlying source text, while semantic summarization is introduced only at structural scopes used for higher-le",
+      "pdf_page": 4,
+      "paper_ids": [
+        "2608.01565v1"
+      ]
+    },
+    {
+      "question_id": "q110",
+      "quote": "A governance layer then filters candidates along\ntwo dimensions: version-awareness, whether a clause belongs to the currently effective version of a document ra",
+      "pdf_page": 2,
+      "paper_ids": [
+        "2609.18769v1"
+      ]
+    },
+    {
+      "question_id": "q112",
+      "quote": "This allows the system to\nrecover cross-region evidence that would be pruned by treebased methods, significantly improving recall.",
+      "pdf_page": 2,
+      "paper_ids": [
+        "2609.27784v1"
+      ]
+    },
+    {
+      "question_id": "q115",
+      "quote": "Φ𝑏applies focus-profilederived domain boosts (PEM highest at 5.0, diagnosis and genomic\nqueries at 4.0, social function and activity limitation at 3.5)",
+      "pdf_page": 3,
+      "paper_ids": [
+        "2609.36392v1"
+      ]
+    },
+    {
+      "question_id": "q126",
+      "quote": "This metric serves as the main indicator of the system’s ability to retrieve pertinent academic content, which aligns with the central objective of this study: ",
+      "pdf_page": 3,
+      "paper_ids": [
+        "2412.15404v1"
+      ]
+    },
+    {
+      "question_id": "q127",
+      "quote": "p(s) i = |v(s) i | P j |v(s) j | ,",
+      "pdf_page": 4,
+      "paper_ids": [
+        "2511.16283v1"
+      ]
+    },
+    {
+      "question_id": "q127",
+      "quote": "Hmix = − X pmix log pmix,",
+      "pdf_page": 4,
+      "paper_ids": [
+        "2511.16283v1"
+      ]
+    }
+  ]
+}

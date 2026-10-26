@@ -1,0 +1,36 @@
+问题：RCER 如何重构不同证据之间的关系，并利用这些关系进行迭代检索？请根据论文说明主要步骤，并给出对应证据。
+模型自评：仅能部分回答
+
+1. RCER 从已累积的源段落中直接重构跨证据关系，以恢复实体对应和推理依赖。
+[E1] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 1 页
+原文：We propose RCER, an iterative RAG method that reconstructs these cross-evidence relations directly from accumulated source passages.
+来源：https://arxiv.org/abs/2610.19398v1
+
+2. 轮间关系证据获取联合分析早期与新获取的段落，建立实体对应和关系；这些判断指定或修订下一信息需求，驱动动态问题分解与后续检索。
+[E3] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 1 页
+原文：Inter-Round Relational Evidence Acquisition jointly analyzes earlier and newly acquired passages to establish entity correspondences and relations. These judgments specify or revise the next information need, guiding dynamic problem decomposition and subsequent retrieval.
+来源：https://arxiv.org/abs/2610.19398v1
+[E1] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 1 页
+原文：Inter-round relational evidence acquisition identifies entity correspondences and relational dependencies to drive dynamic problem decomposition and iterative retrieval.
+来源：https://arxiv.org/abs/2610.19398v1
+
+3. 获取之后，推理上下文重构独立分析最终候选池，选择互补段落并推导跨文档推理。
+[E3] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 1 页
+原文：After acquisition, Reasoning Context Reconstruction independently analyzes the final candidate pool to select complementary passages and derive cross-document inferences.
+来源：https://arxiv.org/abs/2610.19398v1
+[E2] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 3 页
+原文：Reasoning Context Reconstruction jointly selects complementary passages and derives cross-evidence inferences from the final candidate passage pool.
+来源：https://arxiv.org/abs/2610.19398v1
+
+4. 跨证据组合推理利用这些推理论断建立实体对应并组合关系，以推导答案。
+[E1] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 1 页
+原文：Cross-evidence compositional reasoning leverages these inferences to establish entity correspondences and compose relations across selected passages for answer derivation.
+来源：https://arxiv.org/abs/2610.19398v1
+[E2] RCER: Reconstructing Cross-Evidence Relations for Iterative Retrieval-Augmented Generation | PDF 第 3 页
+原文：Cross-Evidence Compositional Reasoning integrates these inferences with the selected passages for answer derivation.
+来源：https://arxiv.org/abs/2610.19398v1
+
+证据局限：
+- 当前证据仅包含摘要、引言片段和框架图说明，缺少对迭代检索各步骤具体实现、终止条件及轮次机制的详细方法描述。
+
+引用编号及原句已校验；这不代表中文解释已被自动证明正确。

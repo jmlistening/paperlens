@@ -1,0 +1,98 @@
+{
+  "question_id": "q009",
+  "system": "fixed_rag",
+  "status": "ok",
+  "answer_status": "invalid",
+  "answer_source": "model",
+  "error": "E2 的引文不在原文中，回答未通过校验。",
+  "model": "deepseek-flash",
+  "decision_model": null,
+  "raw_response": "{\"status\":\"answered\",\"points\":[{\"text\":\"SPARK 从四个视角合成科学推理数据，第一是机制推理，解释所观察现象为何发生\",\"citations\":[{\"id\":\"E2\",\"quote\":\"(1) mechanistic reasoning, which explains why an observed phenomenon occurs (Machamer et al., 2000)\"}]},{\"text\":\"第二是假设证伪，用于区分相互竞争的解释\",\"citations\":[{\"id\":\"E2\",\"quote\":\"(2) hypothesis falsification, which dis-tinguishes competing explanations (Pearl, 2009)\"}]},{\"text\":\"第三是定量推导，强调建模与推导，而不是套用公式\",\"citations\":[{\"id\":\"E2\",\"quote\":\"(3) quantitative derivation, which emphasizes modeling and derivation instead of formula substitution (Sun et al., 2024)\"}]},{\"text\":\"第四是边界校准，考察结论成立所依赖的假设与有效范围\",\"citations\":[{\"id\":\"E2\",\"quote\":\"and (4) boundary calibration, which examines the assumptions and validity limits under which conclusions hold\"}]},{\"text\":\"摘要中也概括了同样四个视角的名称\",\"citations\":[{\"id\":\"E3\",\"quote\":\"synthesizes reasoning tasks from four scientific perspectives: mechanistic reasoning, hypothesis falsification, quantitative derivation, and boundary calibration\"}]}]}",
+  "usage": {
+    "completion_tokens": 272,
+    "prompt_tokens": 1885,
+    "total_tokens": 2157,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 1664,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 221
+  },
+  "tokens": 2157,
+  "latency_ms": 1505.791,
+  "answer_latency_ms": 1505.791,
+  "retrieval_latency_ms": 0.0,
+  "tool_calls": 0,
+  "retrieval_rounds": 0,
+  "stop_reason": "precomputed_retrieval",
+  "retrieved_parent_ids": [
+    "2608.30214v1:16754d9cb8c4:clean2:p2:g1:c2",
+    "2608.30214v1:16754d9cb8c4:clean2:p2:g1:c1",
+    "2608.30214v1:16754d9cb8c4:clean2:p1:g5:c1",
+    "2608.30214v1:16754d9cb8c4:clean2:p8:g9:c1",
+    "2608.30214v1:16754d9cb8c4:clean2:p4:g2:c2",
+    "2608.30214v1:16754d9cb8c4:clean2:p3:g21:c1"
+  ],
+  "selected_evidence_ids": [],
+  "candidate_ids": [],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2608.30214v1:16754d9cb8c4:clean2:p2:g1:c2",
+      "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
+      "page_number": 2
+    },
+    {
+      "id": "E2",
+      "parent_chunk_id": "2608.30214v1:16754d9cb8c4:clean2:p2:g1:c1",
+      "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
+      "page_number": 2
+    },
+    {
+      "id": "E3",
+      "parent_chunk_id": "2608.30214v1:16754d9cb8c4:clean2:p1:g5:c1",
+      "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
+      "page_number": 1
+    },
+    {
+      "id": "E4",
+      "parent_chunk_id": "2608.30214v1:16754d9cb8c4:clean2:p8:g9:c1",
+      "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
+      "page_number": 8
+    },
+    {
+      "id": "E5",
+      "parent_chunk_id": "2608.30214v1:16754d9cb8c4:clean2:p4:g2:c2",
+      "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
+      "page_number": 4
+    },
+    {
+      "id": "E6",
+      "parent_chunk_id": "2608.30214v1:16754d9cb8c4:clean2:p3:g21:c1",
+      "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
+      "page_number": 3
+    }
+  ],
+  "cited_evidence_ids": [],
+  "cited_parent_ids": [],
+  "gold_parent_ids": [
+    "2608.30214v1:16754d9cb8c4:clean2:p3:g32:c1",
+    "2608.30214v1:16754d9cb8c4:clean2:p3:g34:c1"
+  ],
+  "gold_point_count": 3,
+  "metrics": {
+    "schema_success": 0.0,
+    "quote_integrity": 0.0,
+    "cited_gold_parent_recall": 0.0,
+    "gold_point_citation_recall": 0.0
+  },
+  "trace": [],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:23+00:00",
+  "run_signature": "e7373b7846de009cb7dfc572e575a58ac547cc75c120f934c6ffc4f768fb08e4"
+}

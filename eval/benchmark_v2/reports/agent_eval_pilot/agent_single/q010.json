@@ -1,0 +1,213 @@
+{
+  "question_id": "q010",
+  "system": "agent_single",
+  "status": "ok",
+  "answer_status": "answered",
+  "answer_source": "model",
+  "error": null,
+  "model": "deepseek-flash",
+  "decision_model": "deepseek-flash",
+  "raw_response": "{\"status\":\"answered\",\"points\":[{\"text\":\"本文方法（Ours）在 OpenAlex 数据集上的准确率（Accuracy）为 76.68。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"Ours 76.68 65.35 85.13\"}]},{\"text\":\"本文方法（Ours）在 DBLP 数据集上的准确率（Accuracy）为 73.43。\",\"citations\":[{\"id\":\"E1\",\"quote\":\"Ours 76.68 65.35 85.13 73.43 64.52 83.25\"}]}],\"limitations\":[]}",
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 942,
+    "total_tokens": 1077,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 256,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 686
+  },
+  "tokens": 6254,
+  "latency_ms": 2738.807,
+  "answer_latency_ms": 945.846,
+  "retrieval_latency_ms": 237.034,
+  "tool_calls": 1,
+  "retrieval_rounds": 1,
+  "stop_reason": "sufficient",
+  "retrieved_parent_ids": [
+    "2609.00761v1:16754d9cb8c4:clean2:p4:g2:c1"
+  ],
+  "selected_evidence_ids": [
+    "C2"
+  ],
+  "candidate_ids": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20"
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "parent_chunk_id": "2609.00761v1:16754d9cb8c4:clean2:p4:g2:c1",
+      "title": "Agent-Enhanced Heterogeneous Graph RAG for Academic Question Answering",
+      "page_number": 4
+    }
+  ],
+  "cited_evidence_ids": [
+    "E1"
+  ],
+  "cited_parent_ids": [
+    "2609.00761v1:16754d9cb8c4:clean2:p4:g2:c1"
+  ],
+  "gold_parent_ids": [
+    "2609.00761v1:16754d9cb8c4:clean2:p3:g3:c2",
+    "2609.00761v1:16754d9cb8c4:clean2:p3:g3:c3"
+  ],
+  "gold_point_count": 2,
+  "metrics": {
+    "schema_success": 1.0,
+    "quote_integrity": 1.0,
+    "cited_gold_parent_recall": 0.0,
+    "gold_point_citation_recall": 0.0
+  },
+  "trace": [
+    {
+      "kind": "retrieval",
+      "round": 1,
+      "tool": "search_dense",
+      "query": "本文方法在 OpenAlex 和 DBLP 两个数据集上分别取得了多少准确率（Accuracy）？",
+      "candidate_count": 20,
+      "new_count": 20,
+      "sources": [
+        {
+          "id": "C1",
+          "paper": "2607.04610v1",
+          "page": 1
+        },
+        {
+          "id": "C2",
+          "paper": "2609.00761v1",
+          "page": 4
+        },
+        {
+          "id": "C3",
+          "paper": "2012.00822v4",
+          "page": 5
+        },
+        {
+          "id": "C4",
+          "paper": "2607.20926v1",
+          "page": 1
+        },
+        {
+          "id": "C5",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C6",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C7",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C8",
+          "paper": "2012.12624v3",
+          "page": 2
+        },
+        {
+          "id": "C9",
+          "paper": "2608.30214v1",
+          "page": 7
+        },
+        {
+          "id": "C10",
+          "paper": "2610.26339v1",
+          "page": 3
+        },
+        {
+          "id": "C11",
+          "paper": "2002.08909v1",
+          "page": 6
+        },
+        {
+          "id": "C12",
+          "paper": "2607.03028v1",
+          "page": 7
+        },
+        {
+          "id": "C13",
+          "paper": "2607.20284v1",
+          "page": 6
+        },
+        {
+          "id": "C14",
+          "paper": "2607.20510v2",
+          "page": 4
+        },
+        {
+          "id": "C15",
+          "paper": "2608.30214v1",
+          "page": 1
+        },
+        {
+          "id": "C16",
+          "paper": "2012.00955v2",
+          "page": 1
+        },
+        {
+          "id": "C17",
+          "paper": "2104.08610v1",
+          "page": 5
+        },
+        {
+          "id": "C18",
+          "paper": "2412.10704v2",
+          "page": 7
+        },
+        {
+          "id": "C19",
+          "paper": "2012.01414v1",
+          "page": 1
+        },
+        {
+          "id": "C20",
+          "paper": "2610.26339v1",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "kind": "decision",
+      "round": 1,
+      "assessment": "sufficient",
+      "selected_ids": [
+        "C2"
+      ],
+      "action": "finish",
+      "query": "",
+      "missing": [],
+      "reason": "C2 的 Table 1 列出 Ours 在两数据集上的准确率：OpenAlex 76.68，DBLP 73.43。"
+    }
+  ],
+  "attempt": 1,
+  "finished_at": "2026-10-25T06:03:56+00:00",
+  "run_signature": "1df0ad44c81bd4b5bc965e5bc98641172e2cb9b6a6d770d8e08dc3eb39f3a481"
+}

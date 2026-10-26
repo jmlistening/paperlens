@@ -1,0 +1,19 @@
+# LLM-rerank diagnostic matrix (spends DeepSeek tokens).
+# Run with: --matrix eval/experiments/matrix_llm.yaml --systems hybrid_rrf_rerank_top6 --llm-rerank
+version: 1
+
+systems:
+  hybrid_rrf_rerank_top6:
+    kind: retrieval
+    mode: hybrid
+    query: query_en
+    top_k: 6
+    pool: 50
+    rrf_k: 60
+    rerank: llm
+    rerank_top_n: 20
+    requires_llm: true
+    implemented: true
+
+budget:
+  max_tokens: null
