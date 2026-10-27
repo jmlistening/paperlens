@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="paperlens-logo-title paperlens-logo-desc">
+  <title id="paperlens-logo-title">PaperLens</title>
+  <desc id="paperlens-logo-desc">Two stacked paper sheets with a teal lens ring.</desc>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#F6F3EC" stroke="#1C2430" stroke-width="2"/>
+  <rect x="17" y="8" width="28" height="40" rx="4" fill="#EFEBE1" stroke="#1C2430" stroke-width="2"/>
+  <rect x="12" y="13" width="28" height="40" rx="4" fill="#FFFDF8" stroke="#1C2430" stroke-width="2"/>
+  <path d="M18 24h14M18 30h10" fill="none" stroke="#5B6675" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="42" cy="40" r="12.5" fill="#E8F3F0" fill-opacity="0.9" stroke="#0F766E" stroke-width="4.5"/>
+  <path d="M36 34a8 8 0 0 1 6-4" fill="none" stroke="#FFFDF8" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

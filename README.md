@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>PaperLens</h1>
+<h1><img src="docs/assets/logo.svg" width="40" height="40" alt="PaperLens logo" align="middle"> PaperLens</h1>
 
 <p><strong>基于 RAG 与 Agent 的个性化论文发现与证据问答助手</strong></p>
 
@@ -18,9 +18,11 @@
 
 </div>
 
-![PaperLens](docs/screenshots/hero-banner.png)
+<p align="center">
+  <img src="docs/screenshots/simple-page.png" alt="PaperLens 每日推送页" width="100%">
+</p>
 
-
+> 每日推送页。截图使用**合成 demo 数据**，不是作者的真实兴趣、问答或推送记录。
 
 <a id="what"></a>
 ## ✨ 这是什么
@@ -297,10 +299,6 @@ harness 输出 schema/quote、cited gold parent、gold-point citation、tool cal
 ## 📸 真实运行截图
 
 > 以下截图使用**合成 demo 数据**：假邮箱、假论文、假问答/Agent trace；不是作者的真实兴趣、问答或推送记录。
-
-<p align="center">
-  <img src="docs/screenshots/simple-page.png" alt="每日推送" width="100%">
-</p>
 
 | 推送历史 | 总览与评测 |
 | :---: | :---: |
